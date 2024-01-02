@@ -3,65 +3,83 @@
 @tailwind utilities;
 
 @layer base {
-    @font-face {
-      font-family: "Peyda";
-      src: url(../../public/fonts/PeydaFaNum-Medium.ttf);
-      font-display: swap;
-    }
-    @font-face {
-      font-family: "PeydaSemiBold";
-      src: url(../../public/fonts/PeydaFaNum-SemiBold.ttf);
-      font-display: swap;
-    }
-    @font-face {
-      font-family: "PeydaBold";
-      src: url(../../public/fonts/PeydaFaNum-Bold.ttf);
-      font-display: swap;
-    }
-    /* width */
-    ::-webkit-scrollbar {
-      width: 5px;
-    }
-  
-    /* Track */
-    ::-webkit-scrollbar-track {
-      background: #b0b0b0;
-      border-radius: 5px;
-    }
-  
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-      background: #4f4f4f;
-      border-radius: 5px;
-    }
-  
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-      background: #2c2c2c;
-    }
-    ::-webkit-outer-spin-button,
-    ::-webkit-inner-spin-button {
-      display: none;
-    }
-    body{
-      font-family : 'Peyda'
-    }
+  @font-face {
+    font-family: "Peyda";
+    src: url(../../public/fonts/PeydaFaNum-Medium.ttf);
+    font-display: swap;
   }
-  @layer components {
-    .center {
-      @apply flex items-center justify-center;
-    }
-    .shadow-box {
-      box-shadow: 0px 8.434504508972168px 63.258785247802734px 0px #00000008;
-    }
-    .avtice {
-      @apply sm:text-pale-blue text-content-one border-b-4 border-pale-blue pb-[7px] font-PeydaBold;
-    }
-    .show{
-      @apply right-0
-    }
-    .active-answer{
-      @apply flex
-    }
+  @font-face {
+    font-family: "PeydaSemiBold";
+    src: url(../../public/fonts/PeydaFaNum-SemiBold.ttf);
+    font-display: swap;
   }
-  
+  @font-face {
+    font-family: "PeydaBold";
+    src: url(../../public/fonts/PeydaFaNum-Bold.ttf);
+    font-display: swap;
+  }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #b0b0b0;
+    border-radius: 5px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #4f4f4f;
+    border-radius: 5px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2c2c2c;
+  }
+  ::-webkit-outer-spin-button,
+  ::-webkit-inner-spin-button {
+    display: none;
+  }
+  body {
+    cursor: url("../../public/image/cursor.png"), auto;
+    font-family: "Peyda";
+  }
+  * {
+    cursor: url("../../public/image/cursor.png"), auto;
+  }
+  button {
+    cursor: url("../../public/image/cursor.png"), auto;
+  }
+  input:focus {
+    cursor: url("../../public/image/cursor.png"), auto;
+  }
+}
+@layer components {
+  .center {
+    @apply flex items-center justify-center;
+  }
+  .shadow-box {
+    box-shadow: 0px 8.434504508972168px 63.258785247802734px 0px #00000008;
+  }
+  .avtice {
+    @apply sm:text-pale-blue text-content-one border-b-4 border-pale-blue pb-[7px] font-PeydaBold;
+  }
+  .show {
+    @apply right-0;
+  }
+  .active-answer {
+    @apply flex;
+  }
+  .active-page {
+    @apply flex items-center h-full mt-[9px];
+  }
+  .active-page-rtc {
+    @apply sm:flex bg-primary  w-[52px] h-[11px] center rounded-t-lg;
+  }
+  .unactive-page-rtc {
+    @apply hidden;
+  }
+}

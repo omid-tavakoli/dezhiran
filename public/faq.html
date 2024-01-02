@@ -79,7 +79,7 @@
             <!-- contact and login and search-->
             <div class="flex items-center gap-x-2 md:gap-x-3">
                 <!-- search -->
-                <div class="center w-6 lg:w-16 h-12 cursor-pointer">
+                <div class="center w-6 lg:w-16 h-12 ">
                     <span class="center w-5 h-5">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_210_1596)">
@@ -420,10 +420,10 @@
                 <div class="overflow-hidden flex justify-start sm:justify-center mr-[6px] sm:pr-0 sm:mr-0 ">
                     <ul
                         class=" inline-flex pb-1  gap-x-[26px] sm:gap-x-[33px]  md:text-xl mt-[23px] md:m-0 text-list-faq border-b-[1.17px] border-b-[$c7c7c7] whitespace-nowrap">
-                        <li class="avtice cursor-pointer">همه بخش ها</li>
-                        <li class="cursor-pointer">بخش بازرگانی</li>
-                        <li class="cursor-pointer">بخش گارانتی</li>
-                        <li class="cursor-pointer">بخش بشتیبانی</li>
+                        <li class="avtice ">همه بخش ها</li>
+                        <li >بخش بازرگانی</li>
+                        <li >بخش گارانتی</li>
+                        <li >بخش بشتیبانی</li>
                     </ul>
                 </div>
             </div>
@@ -431,7 +431,7 @@
             <div>
                  <div class=" mb-3 md:mb-4" >
                     <div onclick="toggleAnswer(1)" class="question flex justify-between py-[17px] px-[12.5px] md:py-[27px] md:px-[32px] text-[15px]
-                        font-PeydaBold md:text-base bg-white border border-faq-border cursor-pointer text-lg rounded-md">
+                        font-PeydaBold md:text-lg bg-white border border-faq-border  text-lg rounded-md">
                         <span class="text-question text-quiz-faq">
                             آیا دژ ایرانیان امکان خرید قسطی را دارد.
                         </span>
@@ -455,7 +455,58 @@
                         </div>
                     </div>
                 </div>
-
+                <div class=" mb-3 md:mb-4" >
+                    <div onclick="toggleAnswer(2)" class="question flex justify-between py-[17px] px-[12.5px] md:py-[27px] md:px-[32px] text-[15px]
+                        font-PeydaBold md:text-lg bg-white border border-faq-border  text-lg rounded-md">
+                        <span class="text-question text-quiz-faq">
+                            آیا دژ ایرانیان امکان خرید قسطی را دارد.
+                        </span>
+                        <span>
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.64531 14.591L12.8083 11.4281L15.9712 14.591" stroke="#313131"
+                                    stroke-width="1.58147" stroke-linecap="round" stroke-linejoin="round" />
+                                <path opacity="0.5"
+                                    d="M23.3516 13.0096C23.3516 17.9797 23.3516 20.4647 21.8076 22.0087C20.2636 23.5527 17.7785 23.5527 12.8084 23.5527C7.83835 23.5527 5.35331 23.5527 3.80931 22.0087C2.2653 20.4647 2.2653 17.9797 2.2653 13.0096C2.2653 8.0395 2.2653 5.55446 3.80931 4.01045C5.35331 2.46645 7.83835 2.46645 12.8084 2.46645C17.7785 2.46645 20.2636 2.46645 21.8076 4.01046C23.3516 5.55446 23.3516 8.0395 23.3516 13.0096Z"
+                                    stroke="#313131" stroke-width="1.58147" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="hidden" id="answer2">
+                        <div
+                            class="transition-all bg-box-answer py-[18px] px-[28px]  border border-faq-border rounded-b-md text-asnwer">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجلهلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                            ن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                        </div>
+                    </div>
+                </div>
+                <div class=" mb-3 md:mb-4" >
+                    <div onclick="toggleAnswer(3)" class="question flex justify-between py-[17px] px-[12.5px] md:py-[27px] md:px-[32px] text-[15px]
+                        font-PeydaBold md:text-lg bg-white border border-faq-border  text-lg rounded-md">
+                        <span class="text-question text-quiz-faq">
+                            آیا دژ ایرانیان امکان خرید قسطی را دارد.
+                        </span>
+                        <span>
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.64531 14.591L12.8083 11.4281L15.9712 14.591" stroke="#313131"
+                                    stroke-width="1.58147" stroke-linecap="round" stroke-linejoin="round" />
+                                <path opacity="0.5"
+                                    d="M23.3516 13.0096C23.3516 17.9797 23.3516 20.4647 21.8076 22.0087C20.2636 23.5527 17.7785 23.5527 12.8084 23.5527C7.83835 23.5527 5.35331 23.5527 3.80931 22.0087C2.2653 20.4647 2.2653 17.9797 2.2653 13.0096C2.2653 8.0395 2.2653 5.55446 3.80931 4.01045C5.35331 2.46645 7.83835 2.46645 12.8084 2.46645C17.7785 2.46645 20.2636 2.46645 21.8076 4.01046C23.3516 5.55446 23.3516 8.0395 23.3516 13.0096Z"
+                                    stroke="#313131" stroke-width="1.58147" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="hidden" id="answer3">
+                        <div
+                            class="transition-all bg-box-answer py-[18px] px-[28px]  border border-faq-border rounded-b-md text-asnwer">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                            چاپگرها و متون بلکه روزنامه و مجلهلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                            ن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -474,7 +525,7 @@
                 <span class="font-PeydaBold">دژ ایرانیان</span>
             </div>
             <!-- comment -->
-            <div class=" xl:max-w-[486px] mb-[23px] text-footer-contact text-xs sm:text-base">
+            <div class=" xl:max-w-[486px] mb-[23px] text-footer-contact text-sm sm:text-base">
                 شرکت دژایرانیان از سال ۱۳۹۲ فعالیت های تخصصی چندگانه خود را با اتکا به
                 تکنولوژی روز و تجربیات کادر مجرب آغاز نمود و با بکار گیری توانمندی های
                 حرفه ای، تجربیات تیم کارشناسی، مدیریتی و با استفاده از فناوری های

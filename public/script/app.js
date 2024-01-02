@@ -3,9 +3,37 @@ const hidemenu = document.querySelector(".hidemenu")
 const showmenu = document.querySelector(".showmenu")
 const question = document.querySelector(".text-question")
 const boxQuestion = document.querySelector(".question")
+const phone = document.querySelector('.phone')
+const boxPhone = document.querySelector(".box-phone")
+const iconPhone = document.querySelector(".icon-phone")
+const name = document.querySelector('.name')
+const boxName = document.querySelector(".box-name")
+const iconName = document.querySelector(".icon-name")
 
 
+name.addEventListener("focusin", () => {
+  boxName.classList.add('border-pale-blue')
+  boxName.classList.remove('border-gray-border')
+  iconName.classList.add('text-pale-blue')
+});
 
+name.addEventListener("focusout", () => {
+  iconName.classList.remove('text-pale-blue')
+  boxName.classList.remove('border-pale-blue')
+  boxName.classList.add('border-gray-border')
+});
+
+phone.addEventListener("focusin", () => {
+  boxPhone.classList.add('border-pale-blue')
+  boxPhone.classList.remove('border-gray-border')
+  iconPhone.classList.add('text-pale-blue')
+});
+
+phone.addEventListener("focusout", () => {
+  iconPhone.classList.remove('text-pale-blue')
+  boxPhone.classList.remove('border-pale-blue')
+  boxPhone.classList.add('border-gray-border')
+});
 function toggleAnswer(id) {
   const answer = document.getElementById("answer" + id);
   console.log(answer)

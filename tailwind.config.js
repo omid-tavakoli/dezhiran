@@ -14,7 +14,7 @@ module.exports = {
         "pale-blue": "#0D78E5",
         "orange-mid": "#E34935",
         "secondary-gray": "#4B4B4B",
-        primary: "#FFEFED",
+        primary: "#f4f4f4",
         "btn-bg": "#F0F6FF",
         "content-one": "#243757",
         "content-gray": "#42526D",
