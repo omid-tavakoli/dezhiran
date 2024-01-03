@@ -43,17 +43,17 @@
   ::-webkit-inner-spin-button {
     display: none;
   }
-  body {
-    cursor: url("../../public/image/cursor.png"), auto;
+  html{
+    cursor: url("../../public/image/cursor.png"), default;
     font-family: "Peyda";
   }
-  * {
+  *{
     cursor: url("../../public/image/cursor.png"), auto;
   }
-  button {
+  button:hover{
     cursor: url("../../public/image/cursor.png"), auto;
   }
-  input:focus {
+  input:focus{
     cursor: url("../../public/image/cursor.png"), auto;
   }
 }

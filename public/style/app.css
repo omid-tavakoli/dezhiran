@@ -499,20 +499,20 @@ video {
   display: none;
 }
 
-body {
-  cursor: url("../../public/image/cursor.png"), auto;
+html{
+  cursor: url("../../public/image/cursor.png"), default;
   font-family: "Peyda";
 }
 
-* {
+*{
   cursor: url("../../public/image/cursor.png"), auto;
 }
 
-button {
+button:hover{
   cursor: url("../../public/image/cursor.png"), auto;
 }
 
-input:focus {
+input:focus{
   cursor: url("../../public/image/cursor.png"), auto;
 }
 
@@ -1078,8 +1078,8 @@ input:focus {
   row-gap: 9px;
 }
 
-.overflow-hidden {
-  overflow: hidden;
+.overflow-auto {
+  overflow: auto;
 }
 
 .overflow-y-auto {
@@ -1749,6 +1749,11 @@ input:focus {
   .sm\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .sm\:hover\:bg-address:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(230 240 255 / var(--tw-bg-opacity));
   }
 }
 
