@@ -471,7 +471,7 @@ video {
 /* width */
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
 }
 
 /* Track */
@@ -500,7 +500,7 @@ video {
 }
 
 html{
-  cursor: url("../../public/image/cursor.png"), default;
+  cursor: url("../../public/image/cursor.png"), auto;
   font-family: "Peyda";
 }
 
@@ -747,6 +747,10 @@ input:focus{
 
 .mb-\[31px\] {
   margin-bottom: 31px;
+}
+
+.mb-\[62px\] {
+  margin-bottom: 62px;
 }
 
 .ml-1 {
@@ -1070,6 +1074,10 @@ input:focus{
   row-gap: 19px;
 }
 
+.gap-y-\[26px\] {
+  row-gap: 26px;
+}
+
 .gap-y-\[8px\] {
   row-gap: 8px;
 }
@@ -1204,6 +1212,11 @@ input:focus{
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-orange-primery {
+  --tw-bg-opacity: 1;
+  background-color: rgb(199 61 43 / var(--tw-bg-opacity));
 }
 
 .p-\[18\.5px\] {
@@ -1375,6 +1388,10 @@ input:focus{
 
 .pb-\[32px\] {
   padding-bottom: 32px;
+}
+
+.pb-\[45px\] {
+  padding-bottom: 45px;
 }
 
 .pl-\[19px\] {
@@ -1841,6 +1858,10 @@ input:focus{
 
   .md\:pb-\[35px\] {
     padding-bottom: 35px;
+  }
+
+  .md\:pb-\[75px\] {
+    padding-bottom: 75px;
   }
 
   .md\:pt-\[32px\] {

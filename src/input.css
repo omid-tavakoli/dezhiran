@@ -20,7 +20,7 @@
   }
   /* width */
   ::-webkit-scrollbar {
-    width: 5px;
+    width: 10px;
   }
 
   /* Track */
@@ -44,7 +44,7 @@
     display: none;
   }
   html{
-    cursor: url("../../public/image/cursor.png"), default;
+    cursor: url("../../public/image/cursor.png"), auto;
     font-family: "Peyda";
   }
   *{
