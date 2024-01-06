@@ -42,7 +42,7 @@
                     <ul
                         class="flex items-center h-full text-sm lg:text-base gap-x-2.5 md:gap-x-4 xl:gap-x-[30px] text-dark-header whitespace-nowrap">
                         <li class="center flex-col h-full">
-                            <a href="/public/index.html" >صفحه اصلی</a>
+                            <a href="/public/index.html">صفحه اصلی</a>
                         </li>
                         <li class="center flex-col h-full">
                             <div class="flex items-center gap-x-[2.5px]">
@@ -54,6 +54,9 @@
                                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </span>
+                            </div>
+                            <div class="unactive-page-rtc">
+                                <span class="block w-[32px] h-[5px] rounded-xs bg-orange-mid"></span>
                             </div>
                         </li>
                         <li class="center flex-col h-full ">
@@ -69,19 +72,16 @@
                             </div>
                         </li>
                         <li class="center flex-col h-full">
-                                                        <a href="/public/project.html">پروژه ها</a>
-                            <div class="unactive-page-rtc">
-                                <span class="block w-[32px] h-[5px] rounded-xs bg-orange-mid"></span>
-                            </div>
+                            <a href="/public/project.html">پروژه ها</a>
                         </li>
                         <li class="center flex-col h-full">
-                            <a href="/public/contact.html">ارتباط با ما</a>
-                        </li>
-                        <li class="center flex-col h-full">
-                            <a href="/public/about.html" class="active-page">درباره ما</a>
+                            <a href="/public/contact.html" class="active-page">ارتباط با ما</a>
                             <div class="active-page-rtc">
                                 <span class="block w-[32px] h-[5px] rounded-xs bg-orange-mid"></span>
                             </div>
+                        </li>
+                        <li class="center flex-col h-full">
+                            <a href="/public/about.html">درباره ما</a>
                         </li>
                     </ul>
                 </div>
@@ -167,7 +167,7 @@
                 </div>
                 <!-- icon menu -->
                 <!-- onclick -->
-                <span class="center showmenu">
+                <span class="center" onclick="showmenu()">
                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20.3364 7.5L4.33643 7.5" stroke="#243757" stroke-width="1.5" stroke-linecap="round" />
                         <path d="M20.3364 12.5L4.33643 12.5" stroke="#243757" stroke-width="1.5"
@@ -194,7 +194,7 @@
                         <span>دژ ایرانیان</span>
                     </div>
                     <!-- onclick -->
-                    <span class="hidemenu">
+                    <span onclick="hidemenu()">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M1.66663 9.99999C1.66663 6.07162 1.66663 4.10743 2.88701 2.88704C4.1074 1.66666 6.07159 1.66666 9.99996 1.66666C13.9283 1.66666 15.8925 1.66666 17.1129 2.88704C18.3333 4.10743 18.3333 6.07162 18.3333 9.99999C18.3333 13.9284 18.3333 15.8925 17.1129 17.1129C15.8925 18.3333 13.9283 18.3333 9.99996 18.3333C6.07159 18.3333 4.1074 18.3333 2.88701 17.1129C1.66663 15.8925 1.66663 13.9284 1.66663 9.99999Z"
@@ -206,8 +206,8 @@
                 </div>
                 <div class="w-full flex flex-col justify-between h-[90%]">
                     <!-- menu -->
-                    <ul class="flex flex-col gap-y-2.5">
-                        <a href="#">
+                     <ul class="flex flex-col gap-y-2.5">
+                        <a href="/public/index.html">
                             <li
                                 class="flex items-center gap-x-[6px] border  border-content-one rounded-xl px-2.5 py-2.5">
                                 <span>
@@ -279,7 +279,7 @@
                                 <span>فروشگاه</span>
                             </li>
                         </a>
-                        <a href="#">
+                        <a href="/public/project.html">
                             <li
                                 class="flex items-center gap-x-[6px] border  border-content-one rounded-xl px-2.5 py-2.5">
                                 <span>
@@ -319,7 +319,7 @@
                                 <span>سوالات متداول</span>
                             </li>
                         </a>
-                        <a href="#">
+                        <a href="/public/about.html">
                             <li
                                 class="flex items-center gap-x-[6px] border  border-content-one rounded-xl px-2.5 py-2.5">
                                 <span>
@@ -330,10 +330,10 @@
                                             stroke-width="1.5" />
                                     </svg>
                                 </span>
-                                <span>ارتباط با ما</span>
+                                <span>درباره ما</span>
                             </li>
                         </a>
-                        <a href="#">
+                        <a href="/public/contact.html">
                             <li
                                 class="flex items-center gap-x-[6px] border  border-content-one rounded-xl px-2.5 py-2.5">
                                 <span>
@@ -356,7 +356,7 @@
                     </ul>
                     <!-- login and contact us -->
                     <div>
-                        <div class="flex justify-between items-center ">
+                        <div class="flex justify-between items-center mb-9">
                             <div class="flex gap-x-2.5 items-center text-xs text-pale-blue">
                                 <span>
                                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none"

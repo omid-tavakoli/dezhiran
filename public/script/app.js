@@ -1,6 +1,4 @@
 const menu = document.querySelector(".menu");
-const hidemenu = document.querySelector(".hidemenu");
-const showmenu = document.querySelector(".showmenu");
 const phone = document.querySelector(".phone");
 const boxPhone = document.querySelector(".box-phone");
 const iconPhone = document.querySelector(".icon-phone");
@@ -50,15 +48,14 @@ function toggleAnswer(id) {
     boxQuestion.classList.add("rounded-md");
   }
 }
-showmenu.addEventListener("click", () => {
+function showmenu(){
   menu.classList.toggle("right-0");
   menu.classList.remove("right-[700px]");
-});
-hidemenu.addEventListener("click", () => {
+}
+function hidemenu(){
   menu.classList.toggle("right-[700px]");
   menu.classList.remove("right-0");
-});
-
+}
 function shareBtn(){
   if (navigator.share) {
     navigator

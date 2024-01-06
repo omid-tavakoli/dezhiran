@@ -71,9 +71,6 @@
   .avtice {
     @apply sm:text-pale-blue text-content-one border-b-4 border-pale-blue pb-[7px] font-PeydaBold;
   }
-  .show {
-    @apply right-0;
-  }
   .active-answer {
     @apply flex;
   }
