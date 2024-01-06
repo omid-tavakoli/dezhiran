@@ -10,11 +10,11 @@
 </head>
 
 <body>
-    <header class="h-[60px] sm:h-[80px] lg:h-[108px] center w-full  xl:py-[25px] px-3 xl:px-[60px]">
+    <header class="h-[60px] sm:h-[80px] lg:h-[108px] center w-full   px-3 xl:px-[60px]">
         <!-- header descktop -->
-        <div class="hidden sm:flex  justify-between items-center w-full text-base">
+        <div class="hidden h-full sm:flex  justify-between items-center w-full text-base">
             <!-- logo and menu -->
-            <nav class="flex items-center gap-x-2 md:gap-x-3 xl:gap-x-6">
+            <nav class="flex items-center h-full gap-x-2 md:gap-x-3 xl:gap-x-6">
                 <!-- logo -->
                 <div>
                     <div class="flex items-center gap-x-1 md:gap-x-3 whitespace-nowrap xl:ml-[57px]">
@@ -38,40 +38,62 @@
                     </div>
                 </div>
                 <!-- menu -->
-                <div>
+                <div class="h-full">
                     <ul
-                        class="flex items-center text-sm lg:text-base gap-x-2.5 md:gap-x-4 xl:gap-x-[30px] text-dark-header whitespace-nowrap">
-                        <li>
-                            <a href="/public/index.html">صفحه اصلی</a>
+                        class="flex items-center h-full text-sm lg:text-base gap-x-2.5 md:gap-x-4 xl:gap-x-[30px] text-dark-header whitespace-nowrap">
+                        <li class="center flex-col h-full">
+                            <a href="/public/index.html" >صفحه اصلی</a>
+                            <div class="unactive-page-rtc">
+                                <span class="block w-[32px] h-[5px] rounded-xs bg-orange-mid"></span>
+                            </div>
                         </li>
-                        <li class="flex items-center gap-x-[2.5px]">
-                            <a href="#">خدمات ما</a>
-                            <span class="center w-5 h-5">
-                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.8332 1.5L6.99984 6.5L1.1665 1.5" stroke="#111111" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </span>
+                        <li class="center flex-col h-full">
+                            <div class="flex items-center gap-x-[2.5px]">
+                                <a href="#">خدمات ما</a>
+                                <span class="center w-5 h-5">
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.8332 1.5L6.99984 6.5L1.1665 1.5" stroke="#111111"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="unactive-page-rtc">
+                                <span class="block w-[32px] h-[5px] rounded-xs bg-orange-mid"></span>
+                            </div>
                         </li>
-                        <li class="flex items-center gap-x-[2.5px]">
-                            <a href="#">فروشگاه</a>
-                            <span class="center w-5 h-5">
-                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.8332 1.5L6.99984 6.5L1.1665 1.5" stroke="#111111" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </span>
+                        <li class="center flex-col h-full ">
+                            <div class="flex items-center gap-x-[2.5px] ">
+                                <a href="#">فروشگاه</a>
+                                <span class="center w-5 h-5">
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.8332 1.5L6.99984 6.5L1.1665 1.5" stroke="#111111"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="unactive-page-rtc">
+                                <span class="block w-[32px] h-[5px] rounded-xs bg-orange-mid"></span>
+                            </div>
                         </li>
-                        <li>
-                          <a href="/public/project.html">پروژه ها</a>
+                        <li class="center flex-col h-full">
+                            <a href="/public/project.html" class="active-page">پروژه ها</a>
+                            <div class="active-page-rtc">
+                                <span class="block w-[32px] h-[5px] rounded-xs bg-orange-mid"></span>
+                            </div>
                         </li>
-                        <li>
+                        <li class="center flex-col h-full">
                             <a href="/public/contact.html">ارتباط با ما</a>
+                            <div class="unactive-page-rtc">
+                                <span class="block w-[32px] h-[5px] rounded-xs bg-orange-mid"></span>
+                            </div>
                         </li>
-                        <li>
+                        <li class="center flex-col h-full">
                             <a href="/public/about.html">درباره ما</a>
+                            <div class="unactive-page-rtc">
+                                <span class="block w-[32px] h-[5px] rounded-xs bg-orange-mid"></span>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -292,7 +314,7 @@
                                 <span>پروژه ها</span>
                             </li>
                         </a>
-                        <a href="./faq.html">
+                        <a href="/public/faq.html">
                             <li
                                 class="flex items-center gap-x-[6px] border  border-content-one rounded-xl px-2.5 py-2.5">
                                 <span>
@@ -394,9 +416,9 @@
         </div>
     </header>
     <main>
-        <section class=" bg-primary px-[14px] md:px-[60px] pb-[31px] pt-[11px] md:pt-[32px]">
+        <section class="bg-primary px-[26px] md:px-[62px] pt-[11px] md:pt-[32px]">
             <!-- pagename -->
-            <div class="ml-[7px]">
+            <div class="ml-[2px]">
                 <div class="flex items-center text-xs sm:text-base">
                     <a href="#">
                         <span class="text-secondary-gray ml-[7px]">دژ ایرانیان</span>
@@ -407,103 +429,486 @@
                                 stroke-linejoin="round" />
                         </svg>
                     </span>
-                    <span class="mr-[13px] text-black leading-5">سوالات متداول</span>
+                    <span class="mr-[13px] text-black leading-5">پروژه ها</span>
                 </div>
             </div>
-            <!-- title and segment-->
-            <div class="flex flex-col w-full justify-center mb-[30px]">
+            <!-- projects -->
+            <div class="flex flex-col gap-y-[19px] pb-[43px] md:pb-[38px] md:gap-y-8 mt-[23px] md:mt-[21px]">
                 <!-- title -->
-                <div class="hidden md:block mx-auto text-[28px] leading-9 mb-[22px] font-PeydaBold text-content-gray">
-                    سوالات متداول
-                </div>
-                <!-- segment -->
-                <div class="overflow-auto flex justify-start sm:justify-center mr-[6px] sm:pr-0 sm:mr-0 ">
-                    <ul
-                        class=" inline-flex pb-1  gap-x-[26px] sm:gap-x-[33px]  md:text-xl mt-[23px] md:m-0 text-list-faq border-b-[1.17px] border-b-[$c7c7c7] whitespace-nowrap">
-                        <li class="avtice">همه بخش ها</li>
-                        <li >بخش بازرگانی</li>
-                        <li >بخش گارانتی</li>
-                        <li >بخش بشتیبانی</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- faq -->
-            <div>
-                 <div class=" mb-3 md:mb-4" >
-                    <div onclick="toggleAnswer(1)" class="question1 flex justify-between py-[17px] px-[12.5px] md:py-[27px] md:px-[32px] text-[15px]
-                        font-PeydaBold md:text-lg bg-white border border-faq-border  text-lg rounded-md">
-                        <span class="text-question1 text-quiz-faq">
-                            آیا دژ ایرانیان امکان خرید قسطی را دارد.
-                        </span>
-                        <span>
-                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.64531 14.591L12.8083 11.4281L15.9712 14.591" stroke="#313131"
-                                    stroke-width="1.58147" stroke-linecap="round" stroke-linejoin="round" />
-                                <path opacity="0.5"
-                                    d="M23.3516 13.0096C23.3516 17.9797 23.3516 20.4647 21.8076 22.0087C20.2636 23.5527 17.7785 23.5527 12.8084 23.5527C7.83835 23.5527 5.35331 23.5527 3.80931 22.0087C2.2653 20.4647 2.2653 17.9797 2.2653 13.0096C2.2653 8.0395 2.2653 5.55446 3.80931 4.01045C5.35331 2.46645 7.83835 2.46645 12.8084 2.46645C17.7785 2.46645 20.2636 2.46645 21.8076 4.01046C23.3516 5.55446 23.3516 8.0395 23.3516 13.0096Z"
-                                    stroke="#313131" stroke-width="1.58147" />
-                            </svg>
-                        </span>
-                    </div>
-                    <div class="hidden" id="answer1">
-                        <div
-                            class="transition-all bg-box-answer py-[18px] px-[28px]  border border-faq-border rounded-b-md text-asnwer">
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                            چاپگرها و متون بلکه روزنامه و مجلهلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                            ن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                <div class="text-lg md:text-2xl md:leading-9 text-black ml-[2px]">پروژه ها</div>
+                <!-- projects -->
+                <div class="flex flex-wrap items-center justify-between gap-y-9">
+                    <!-- project -->
+                    <div class="flex flex-col bg-white w-[308px] h-[378px] rounded-xl">
+                        <div class="">
+                            <img src="./image/cctv.png" alt="" class="rounded-t-xl">
+                        </div>
+                        <div class="flex flex-col gap-y-[11px] py-[20.5px] px-[12.5px]">
+                            <div class="text-lg text-black ">پروژه های شرکت امیران مشهد</div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-x-1.5">
+                                    <span>
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2.16699 10C2.16699 6.8573 2.16699 5.28595 3.1433 4.30964C4.11961 3.33333 5.69096 3.33333 8.83366 3.33333H12.167C15.3097 3.33333 16.881 3.33333 17.8573 4.30964C18.8337 5.28595 18.8337 6.8573 18.8337 10V11.6667C18.8337 14.8094 18.8337 16.3807 17.8573 17.357C16.881 18.3333 15.3097 18.3333 12.167 18.3333H8.83366C5.69096 18.3333 4.11961 18.3333 3.1433 17.357C2.16699 16.3807 2.16699 14.8094 2.16699 11.6667V10Z"
+                                                stroke="#111111" stroke-width="1.5" />
+                                            <path opacity="0.5" d="M6.33301 3.33333V2.08333" stroke="#111111"
+                                                stroke-width="1.5" stroke-linecap="round" />
+                                            <path opacity="0.5" d="M14.667 3.33333V2.08333" stroke="#111111"
+                                                stroke-width="1.5" stroke-linecap="round" />
+                                            <path opacity="0.5" d="M2.58301 7.5H18.4163" stroke="#111111"
+                                                stroke-width="1.5" stroke-linecap="round" />
+                                            <path
+                                                d="M15.4997 14.1667C15.4997 14.6269 15.1266 15 14.6663 15C14.2061 15 13.833 14.6269 13.833 14.1667C13.833 13.7064 14.2061 13.3333 14.6663 13.3333C15.1266 13.3333 15.4997 13.7064 15.4997 14.1667Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M15.4997 10.8333C15.4997 11.2936 15.1266 11.6667 14.6663 11.6667C14.2061 11.6667 13.833 11.2936 13.833 10.8333C13.833 10.3731 14.2061 10 14.6663 10C15.1266 10 15.4997 10.3731 15.4997 10.8333Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M11.3337 14.1667C11.3337 14.6269 10.9606 15 10.5003 15C10.0401 15 9.66699 14.6269 9.66699 14.1667C9.66699 13.7064 10.0401 13.3333 10.5003 13.3333C10.9606 13.3333 11.3337 13.7064 11.3337 14.1667Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M11.3337 10.8333C11.3337 11.2936 10.9606 11.6667 10.5003 11.6667C10.0401 11.6667 9.66699 11.2936 9.66699 10.8333C9.66699 10.3731 10.0401 10 10.5003 10C10.9606 10 11.3337 10.3731 11.3337 10.8333Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M7.16667 14.1667C7.16667 14.6269 6.79357 15 6.33333 15C5.8731 15 5.5 14.6269 5.5 14.1667C5.5 13.7064 5.8731 13.3333 6.33333 13.3333C6.79357 13.3333 7.16667 13.7064 7.16667 14.1667Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M7.16667 10.8333C7.16667 11.2936 6.79357 11.6667 6.33333 11.6667C5.8731 11.6667 5.5 11.2936 5.5 10.8333C5.5 10.3731 5.8731 10 6.33333 10C6.79357 10 7.16667 10.3731 7.16667 10.8333Z"
+                                                fill="#111111" />
+                                        </svg>
+
+                                    </span>
+                                    <span>تاریخ انجام:</span>
+                                </div>
+                                <div class="text-[#111111]"> 24 مهر 1401</div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-x-1.5">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_83_2364)">
+                                                <circle opacity="0.5" cx="10.0003" cy="10" r="8.33333" stroke="#111111"
+                                                    stroke-width="1.5" />
+                                                <path d="M10 6.66667V10L12.0833 12.0833" stroke="#111111"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_83_2364">
+                                                    <rect width="20" height="20" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+
+                                    </span>
+                                    <span>مدت زمان:</span>
+                                </div>
+                                <div class="text-[#111111]">1 ماه</div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-x-1.5">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.3337 18.3333L1.66699 18.3333" stroke="#1C274C"
+                                                stroke-width="1.25" stroke-linecap="round" />
+                                            <path
+                                                d="M14.1663 18.3333V5C14.1663 3.42865 14.1663 2.64298 13.6782 2.15482C13.19 1.66667 12.4044 1.66667 10.833 1.66667H9.16634C7.59499 1.66667 6.80932 1.66667 6.32116 2.15482C5.83301 2.64298 5.83301 3.42865 5.83301 5V18.3333"
+                                                stroke="#1C274C" stroke-width="1.25" />
+                                            <path opacity="0.5"
+                                                d="M17.4997 18.3333V9.58333C17.4997 8.41295 17.4997 7.82776 17.2188 7.40738C17.0972 7.2254 16.9409 7.06915 16.759 6.94755C16.3386 6.66667 15.7534 6.66667 14.583 6.66667"
+                                                stroke="#1C274C" stroke-width="1.25" />
+                                            <path opacity="0.5"
+                                                d="M2.5 18.3333V9.58333C2.5 8.41295 2.5 7.82776 2.78088 7.40738C2.90248 7.2254 3.05873 7.06915 3.24072 6.94755C3.66109 6.66667 4.24628 6.66667 5.41667 6.66667"
+                                                stroke="#1C274C" stroke-width="1.25" />
+                                            <path d="M10 18.3333V15.8333" stroke="#1C274C" stroke-width="1.25"
+                                                stroke-linecap="round" />
+                                            <path opacity="0.5" d="M8.33301 4.16667H11.6663" stroke="#1C274C"
+                                                stroke-width="1.25" stroke-linecap="round" />
+                                            <path opacity="0.5" d="M8.33301 6.66667H11.6663" stroke="#1C274C"
+                                                stroke-width="1.25" stroke-linecap="round" />
+                                            <path opacity="0.5" d="M8.33301 9.16666H11.6663" stroke="#1C274C"
+                                                stroke-width="1.25" stroke-linecap="round" />
+                                            <path opacity="0.5" d="M8.33301 11.6667H11.6663" stroke="#1C274C"
+                                                stroke-width="1.25" stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    <span>شرکت:</span>
+                                </div>
+                                <div class="text-[#111111]">شرکت ملی نفت ایران</div>
+                            </div>
+                            <a href="/public/project-dtails.html" class="center mx-auto gap-x-[7px] w-[120px] h-[40px] bg-orange-mid rounded-xs">
+                                <span>
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.5"
+                                            d="M2.74498 10.6909C2.17997 9.95682 1.89746 9.5898 1.89746 8.49999C1.89746 7.41018 2.17997 7.04316 2.74497 6.30912C3.87314 4.84345 5.76518 3.18181 8.54519 3.18181C11.3252 3.18181 13.2172 4.84345 14.3454 6.30912C14.9104 7.04316 15.1929 7.41018 15.1929 8.49999C15.1929 9.5898 14.9104 9.95682 14.3454 10.6909C13.2172 12.1565 11.3252 13.8182 8.54519 13.8182C5.76518 13.8182 3.87314 12.1565 2.74498 10.6909Z"
+                                            stroke="white" stroke-width="1.32955" />
+                                        <path
+                                            d="M10.5404 8.49999C10.5404 9.60143 9.64751 10.4943 8.54608 10.4943C7.44464 10.4943 6.55176 9.60143 6.55176 8.49999C6.55176 7.39856 7.44464 6.50568 8.54608 6.50568C9.64751 6.50568 10.5404 7.39856 10.5404 8.49999Z"
+                                            stroke="white" stroke-width="1.32955" />
+                                    </svg>
+
+                                </span>
+                                <span class="text-white text-xs">مشاهده پروژه</span>
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class=" mb-3 md:mb-4" >
-                    <div onclick="toggleAnswer(2)" class="question2 flex justify-between py-[17px] px-[12.5px] md:py-[27px] md:px-[32px] text-[15px]
-                        font-PeydaBold md:text-lg bg-white border border-faq-border  text-lg rounded-md">
-                        <span class="text-question2 text-quiz-faq">
-                            آیا دژ ایرانیان امکان خرید قسطی را دارد.
-                        </span>
-                        <span>
-                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.64531 14.591L12.8083 11.4281L15.9712 14.591" stroke="#313131"
-                                    stroke-width="1.58147" stroke-linecap="round" stroke-linejoin="round" />
-                                <path opacity="0.5"
-                                    d="M23.3516 13.0096C23.3516 17.9797 23.3516 20.4647 21.8076 22.0087C20.2636 23.5527 17.7785 23.5527 12.8084 23.5527C7.83835 23.5527 5.35331 23.5527 3.80931 22.0087C2.2653 20.4647 2.2653 17.9797 2.2653 13.0096C2.2653 8.0395 2.2653 5.55446 3.80931 4.01045C5.35331 2.46645 7.83835 2.46645 12.8084 2.46645C17.7785 2.46645 20.2636 2.46645 21.8076 4.01046C23.3516 5.55446 23.3516 8.0395 23.3516 13.0096Z"
-                                    stroke="#313131" stroke-width="1.58147" />
-                            </svg>
-                        </span>
-                    </div>
-                    <div class="hidden" id="answer2">
-                        <div
-                            class="transition-all bg-box-answer py-[18px] px-[28px]  border border-faq-border rounded-b-md text-asnwer">
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                            چاپگرها و متون بلکه روزنامه و مجلهلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                            ن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                    <div class="flex flex-col bg-white w-[308px] h-[378px] rounded-xl">
+                        <div class="">
+                            <img src="./image/cctv.png" alt="" class="rounded-t-xl">
+                        </div>
+                        <div class="flex flex-col gap-y-[11px] py-[20.5px] px-[12.5px]">
+                            <div class="text-lg text-black ">پروژه های شرکت امیران مشهد</div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-x-1.5">
+                                    <span>
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2.16699 10C2.16699 6.8573 2.16699 5.28595 3.1433 4.30964C4.11961 3.33333 5.69096 3.33333 8.83366 3.33333H12.167C15.3097 3.33333 16.881 3.33333 17.8573 4.30964C18.8337 5.28595 18.8337 6.8573 18.8337 10V11.6667C18.8337 14.8094 18.8337 16.3807 17.8573 17.357C16.881 18.3333 15.3097 18.3333 12.167 18.3333H8.83366C5.69096 18.3333 4.11961 18.3333 3.1433 17.357C2.16699 16.3807 2.16699 14.8094 2.16699 11.6667V10Z"
+                                                stroke="#111111" stroke-width="1.5" />
+                                            <path opacity="0.5" d="M6.33301 3.33333V2.08333" stroke="#111111"
+                                                stroke-width="1.5" stroke-linecap="round" />
+                                            <path opacity="0.5" d="M14.667 3.33333V2.08333" stroke="#111111"
+                                                stroke-width="1.5" stroke-linecap="round" />
+                                            <path opacity="0.5" d="M2.58301 7.5H18.4163" stroke="#111111"
+                                                stroke-width="1.5" stroke-linecap="round" />
+                                            <path
+                                                d="M15.4997 14.1667C15.4997 14.6269 15.1266 15 14.6663 15C14.2061 15 13.833 14.6269 13.833 14.1667C13.833 13.7064 14.2061 13.3333 14.6663 13.3333C15.1266 13.3333 15.4997 13.7064 15.4997 14.1667Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M15.4997 10.8333C15.4997 11.2936 15.1266 11.6667 14.6663 11.6667C14.2061 11.6667 13.833 11.2936 13.833 10.8333C13.833 10.3731 14.2061 10 14.6663 10C15.1266 10 15.4997 10.3731 15.4997 10.8333Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M11.3337 14.1667C11.3337 14.6269 10.9606 15 10.5003 15C10.0401 15 9.66699 14.6269 9.66699 14.1667C9.66699 13.7064 10.0401 13.3333 10.5003 13.3333C10.9606 13.3333 11.3337 13.7064 11.3337 14.1667Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M11.3337 10.8333C11.3337 11.2936 10.9606 11.6667 10.5003 11.6667C10.0401 11.6667 9.66699 11.2936 9.66699 10.8333C9.66699 10.3731 10.0401 10 10.5003 10C10.9606 10 11.3337 10.3731 11.3337 10.8333Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M7.16667 14.1667C7.16667 14.6269 6.79357 15 6.33333 15C5.8731 15 5.5 14.6269 5.5 14.1667C5.5 13.7064 5.8731 13.3333 6.33333 13.3333C6.79357 13.3333 7.16667 13.7064 7.16667 14.1667Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M7.16667 10.8333C7.16667 11.2936 6.79357 11.6667 6.33333 11.6667C5.8731 11.6667 5.5 11.2936 5.5 10.8333C5.5 10.3731 5.8731 10 6.33333 10C6.79357 10 7.16667 10.3731 7.16667 10.8333Z"
+                                                fill="#111111" />
+                                        </svg>
+
+                                    </span>
+                                    <span>تاریخ انجام:</span>
+                                </div>
+                                <div class="text-[#111111]"> 24 مهر 1401</div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-x-1.5">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_83_2364)">
+                                                <circle opacity="0.5" cx="10.0003" cy="10" r="8.33333" stroke="#111111"
+                                                    stroke-width="1.5" />
+                                                <path d="M10 6.66667V10L12.0833 12.0833" stroke="#111111"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_83_2364">
+                                                    <rect width="20" height="20" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+
+                                    </span>
+                                    <span>مدت زمان:</span>
+                                </div>
+                                <div class="text-[#111111]">1 ماه</div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-x-1.5">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.3337 18.3333L1.66699 18.3333" stroke="#1C274C"
+                                                stroke-width="1.25" stroke-linecap="round" />
+                                            <path
+                                                d="M14.1663 18.3333V5C14.1663 3.42865 14.1663 2.64298 13.6782 2.15482C13.19 1.66667 12.4044 1.66667 10.833 1.66667H9.16634C7.59499 1.66667 6.80932 1.66667 6.32116 2.15482C5.83301 2.64298 5.83301 3.42865 5.83301 5V18.3333"
+                                                stroke="#1C274C" stroke-width="1.25" />
+                                            <path opacity="0.5"
+                                                d="M17.4997 18.3333V9.58333C17.4997 8.41295 17.4997 7.82776 17.2188 7.40738C17.0972 7.2254 16.9409 7.06915 16.759 6.94755C16.3386 6.66667 15.7534 6.66667 14.583 6.66667"
+                                                stroke="#1C274C" stroke-width="1.25" />
+                                            <path opacity="0.5"
+                                                d="M2.5 18.3333V9.58333C2.5 8.41295 2.5 7.82776 2.78088 7.40738C2.90248 7.2254 3.05873 7.06915 3.24072 6.94755C3.66109 6.66667 4.24628 6.66667 5.41667 6.66667"
+                                                stroke="#1C274C" stroke-width="1.25" />
+                                            <path d="M10 18.3333V15.8333" stroke="#1C274C" stroke-width="1.25"
+                                                stroke-linecap="round" />
+                                            <path opacity="0.5" d="M8.33301 4.16667H11.6663" stroke="#1C274C"
+                                                stroke-width="1.25" stroke-linecap="round" />
+                                            <path opacity="0.5" d="M8.33301 6.66667H11.6663" stroke="#1C274C"
+                                                stroke-width="1.25" stroke-linecap="round" />
+                                            <path opacity="0.5" d="M8.33301 9.16666H11.6663" stroke="#1C274C"
+                                                stroke-width="1.25" stroke-linecap="round" />
+                                            <path opacity="0.5" d="M8.33301 11.6667H11.6663" stroke="#1C274C"
+                                                stroke-width="1.25" stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    <span>شرکت:</span>
+                                </div>
+                                <div class="text-[#111111]">شرکت ملی نفت ایران</div>
+                            </div>
+                            <a href="/public/project-dtails.html" class="center mx-auto gap-x-[7px] w-[120px] h-[40px] bg-orange-mid rounded-xs">
+                                <span>
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.5"
+                                            d="M2.74498 10.6909C2.17997 9.95682 1.89746 9.5898 1.89746 8.49999C1.89746 7.41018 2.17997 7.04316 2.74497 6.30912C3.87314 4.84345 5.76518 3.18181 8.54519 3.18181C11.3252 3.18181 13.2172 4.84345 14.3454 6.30912C14.9104 7.04316 15.1929 7.41018 15.1929 8.49999C15.1929 9.5898 14.9104 9.95682 14.3454 10.6909C13.2172 12.1565 11.3252 13.8182 8.54519 13.8182C5.76518 13.8182 3.87314 12.1565 2.74498 10.6909Z"
+                                            stroke="white" stroke-width="1.32955" />
+                                        <path
+                                            d="M10.5404 8.49999C10.5404 9.60143 9.64751 10.4943 8.54608 10.4943C7.44464 10.4943 6.55176 9.60143 6.55176 8.49999C6.55176 7.39856 7.44464 6.50568 8.54608 6.50568C9.64751 6.50568 10.5404 7.39856 10.5404 8.49999Z"
+                                            stroke="white" stroke-width="1.32955" />
+                                    </svg>
+
+                                </span>
+                                <span class="text-white text-xs">مشاهده پروژه</span>
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class=" mb-3 md:mb-4" >
-                    <div onclick="toggleAnswer(3)" class="question3 flex justify-between py-[17px] px-[12.5px] md:py-[27px] md:px-[32px] text-[15px]
-                        font-PeydaBold md:text-lg bg-white border border-faq-border  text-lg rounded-md">
-                        <span class="text-question3 text-quiz-faq">
-                            آیا دژ ایرانیان امکان خرید قسطی را دارد.
-                        </span>
-                        <span>
-                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.64531 14.591L12.8083 11.4281L15.9712 14.591" stroke="#313131"
-                                    stroke-width="1.58147" stroke-linecap="round" stroke-linejoin="round" />
-                                <path opacity="0.5"
-                                    d="M23.3516 13.0096C23.3516 17.9797 23.3516 20.4647 21.8076 22.0087C20.2636 23.5527 17.7785 23.5527 12.8084 23.5527C7.83835 23.5527 5.35331 23.5527 3.80931 22.0087C2.2653 20.4647 2.2653 17.9797 2.2653 13.0096C2.2653 8.0395 2.2653 5.55446 3.80931 4.01045C5.35331 2.46645 7.83835 2.46645 12.8084 2.46645C17.7785 2.46645 20.2636 2.46645 21.8076 4.01046C23.3516 5.55446 23.3516 8.0395 23.3516 13.0096Z"
-                                    stroke="#313131" stroke-width="1.58147" />
-                            </svg>
-                        </span>
+                    <div class="flex flex-col bg-white w-[308px] h-[378px] rounded-xl">
+                        <div class="">
+                            <img src="./image/cctv.png" alt="" class="rounded-t-xl">
+                        </div>
+                        <div class="flex flex-col gap-y-[11px] py-[20.5px] px-[12.5px]">
+                            <div class="text-lg text-black ">پروژه های شرکت امیران مشهد</div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-x-1.5">
+                                    <span>
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2.16699 10C2.16699 6.8573 2.16699 5.28595 3.1433 4.30964C4.11961 3.33333 5.69096 3.33333 8.83366 3.33333H12.167C15.3097 3.33333 16.881 3.33333 17.8573 4.30964C18.8337 5.28595 18.8337 6.8573 18.8337 10V11.6667C18.8337 14.8094 18.8337 16.3807 17.8573 17.357C16.881 18.3333 15.3097 18.3333 12.167 18.3333H8.83366C5.69096 18.3333 4.11961 18.3333 3.1433 17.357C2.16699 16.3807 2.16699 14.8094 2.16699 11.6667V10Z"
+                                                stroke="#111111" stroke-width="1.5" />
+                                            <path opacity="0.5" d="M6.33301 3.33333V2.08333" stroke="#111111"
+                                                stroke-width="1.5" stroke-linecap="round" />
+                                            <path opacity="0.5" d="M14.667 3.33333V2.08333" stroke="#111111"
+                                                stroke-width="1.5" stroke-linecap="round" />
+                                            <path opacity="0.5" d="M2.58301 7.5H18.4163" stroke="#111111"
+                                                stroke-width="1.5" stroke-linecap="round" />
+                                            <path
+                                                d="M15.4997 14.1667C15.4997 14.6269 15.1266 15 14.6663 15C14.2061 15 13.833 14.6269 13.833 14.1667C13.833 13.7064 14.2061 13.3333 14.6663 13.3333C15.1266 13.3333 15.4997 13.7064 15.4997 14.1667Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M15.4997 10.8333C15.4997 11.2936 15.1266 11.6667 14.6663 11.6667C14.2061 11.6667 13.833 11.2936 13.833 10.8333C13.833 10.3731 14.2061 10 14.6663 10C15.1266 10 15.4997 10.3731 15.4997 10.8333Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M11.3337 14.1667C11.3337 14.6269 10.9606 15 10.5003 15C10.0401 15 9.66699 14.6269 9.66699 14.1667C9.66699 13.7064 10.0401 13.3333 10.5003 13.3333C10.9606 13.3333 11.3337 13.7064 11.3337 14.1667Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M11.3337 10.8333C11.3337 11.2936 10.9606 11.6667 10.5003 11.6667C10.0401 11.6667 9.66699 11.2936 9.66699 10.8333C9.66699 10.3731 10.0401 10 10.5003 10C10.9606 10 11.3337 10.3731 11.3337 10.8333Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M7.16667 14.1667C7.16667 14.6269 6.79357 15 6.33333 15C5.8731 15 5.5 14.6269 5.5 14.1667C5.5 13.7064 5.8731 13.3333 6.33333 13.3333C6.79357 13.3333 7.16667 13.7064 7.16667 14.1667Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M7.16667 10.8333C7.16667 11.2936 6.79357 11.6667 6.33333 11.6667C5.8731 11.6667 5.5 11.2936 5.5 10.8333C5.5 10.3731 5.8731 10 6.33333 10C6.79357 10 7.16667 10.3731 7.16667 10.8333Z"
+                                                fill="#111111" />
+                                        </svg>
+
+                                    </span>
+                                    <span>تاریخ انجام:</span>
+                                </div>
+                                <div class="text-[#111111]"> 24 مهر 1401</div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-x-1.5">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_83_2364)">
+                                                <circle opacity="0.5" cx="10.0003" cy="10" r="8.33333" stroke="#111111"
+                                                    stroke-width="1.5" />
+                                                <path d="M10 6.66667V10L12.0833 12.0833" stroke="#111111"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_83_2364">
+                                                    <rect width="20" height="20" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+
+                                    </span>
+                                    <span>مدت زمان:</span>
+                                </div>
+                                <div class="text-[#111111]">1 ماه</div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-x-1.5">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.3337 18.3333L1.66699 18.3333" stroke="#1C274C"
+                                                stroke-width="1.25" stroke-linecap="round" />
+                                            <path
+                                                d="M14.1663 18.3333V5C14.1663 3.42865 14.1663 2.64298 13.6782 2.15482C13.19 1.66667 12.4044 1.66667 10.833 1.66667H9.16634C7.59499 1.66667 6.80932 1.66667 6.32116 2.15482C5.83301 2.64298 5.83301 3.42865 5.83301 5V18.3333"
+                                                stroke="#1C274C" stroke-width="1.25" />
+                                            <path opacity="0.5"
+                                                d="M17.4997 18.3333V9.58333C17.4997 8.41295 17.4997 7.82776 17.2188 7.40738C17.0972 7.2254 16.9409 7.06915 16.759 6.94755C16.3386 6.66667 15.7534 6.66667 14.583 6.66667"
+                                                stroke="#1C274C" stroke-width="1.25" />
+                                            <path opacity="0.5"
+                                                d="M2.5 18.3333V9.58333C2.5 8.41295 2.5 7.82776 2.78088 7.40738C2.90248 7.2254 3.05873 7.06915 3.24072 6.94755C3.66109 6.66667 4.24628 6.66667 5.41667 6.66667"
+                                                stroke="#1C274C" stroke-width="1.25" />
+                                            <path d="M10 18.3333V15.8333" stroke="#1C274C" stroke-width="1.25"
+                                                stroke-linecap="round" />
+                                            <path opacity="0.5" d="M8.33301 4.16667H11.6663" stroke="#1C274C"
+                                                stroke-width="1.25" stroke-linecap="round" />
+                                            <path opacity="0.5" d="M8.33301 6.66667H11.6663" stroke="#1C274C"
+                                                stroke-width="1.25" stroke-linecap="round" />
+                                            <path opacity="0.5" d="M8.33301 9.16666H11.6663" stroke="#1C274C"
+                                                stroke-width="1.25" stroke-linecap="round" />
+                                            <path opacity="0.5" d="M8.33301 11.6667H11.6663" stroke="#1C274C"
+                                                stroke-width="1.25" stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    <span>شرکت:</span>
+                                </div>
+                                <div class="text-[#111111]">شرکت ملی نفت ایران</div>
+                            </div>
+                            <a href="/public/project-dtails.html" class="center mx-auto gap-x-[7px] w-[120px] h-[40px] bg-orange-mid rounded-xs">
+                                <span>
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.5"
+                                            d="M2.74498 10.6909C2.17997 9.95682 1.89746 9.5898 1.89746 8.49999C1.89746 7.41018 2.17997 7.04316 2.74497 6.30912C3.87314 4.84345 5.76518 3.18181 8.54519 3.18181C11.3252 3.18181 13.2172 4.84345 14.3454 6.30912C14.9104 7.04316 15.1929 7.41018 15.1929 8.49999C15.1929 9.5898 14.9104 9.95682 14.3454 10.6909C13.2172 12.1565 11.3252 13.8182 8.54519 13.8182C5.76518 13.8182 3.87314 12.1565 2.74498 10.6909Z"
+                                            stroke="white" stroke-width="1.32955" />
+                                        <path
+                                            d="M10.5404 8.49999C10.5404 9.60143 9.64751 10.4943 8.54608 10.4943C7.44464 10.4943 6.55176 9.60143 6.55176 8.49999C6.55176 7.39856 7.44464 6.50568 8.54608 6.50568C9.64751 6.50568 10.5404 7.39856 10.5404 8.49999Z"
+                                            stroke="white" stroke-width="1.32955" />
+                                    </svg>
+
+                                </span>
+                                <span class="text-white text-xs">مشاهده پروژه</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="hidden" id="answer3">
-                        <div
-                            class="transition-all bg-box-answer py-[18px] px-[28px]  border border-faq-border rounded-b-md text-asnwer">
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                            چاپگرها و متون بلکه روزنامه و مجلهلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
-                            ن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                    <div class="flex flex-col bg-white w-[308px] h-[378px] rounded-xl">
+                        <div class="">
+                            <img src="./image/cctv.png" alt="" class="rounded-t-xl">
+                        </div>
+                        <div class="flex flex-col gap-y-[11px] py-[20.5px] px-[12.5px]">
+                            <div class="text-lg text-black ">پروژه های شرکت امیران مشهد</div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-x-1.5">
+                                    <span>
+                                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2.16699 10C2.16699 6.8573 2.16699 5.28595 3.1433 4.30964C4.11961 3.33333 5.69096 3.33333 8.83366 3.33333H12.167C15.3097 3.33333 16.881 3.33333 17.8573 4.30964C18.8337 5.28595 18.8337 6.8573 18.8337 10V11.6667C18.8337 14.8094 18.8337 16.3807 17.8573 17.357C16.881 18.3333 15.3097 18.3333 12.167 18.3333H8.83366C5.69096 18.3333 4.11961 18.3333 3.1433 17.357C2.16699 16.3807 2.16699 14.8094 2.16699 11.6667V10Z"
+                                                stroke="#111111" stroke-width="1.5" />
+                                            <path opacity="0.5" d="M6.33301 3.33333V2.08333" stroke="#111111"
+                                                stroke-width="1.5" stroke-linecap="round" />
+                                            <path opacity="0.5" d="M14.667 3.33333V2.08333" stroke="#111111"
+                                                stroke-width="1.5" stroke-linecap="round" />
+                                            <path opacity="0.5" d="M2.58301 7.5H18.4163" stroke="#111111"
+                                                stroke-width="1.5" stroke-linecap="round" />
+                                            <path
+                                                d="M15.4997 14.1667C15.4997 14.6269 15.1266 15 14.6663 15C14.2061 15 13.833 14.6269 13.833 14.1667C13.833 13.7064 14.2061 13.3333 14.6663 13.3333C15.1266 13.3333 15.4997 13.7064 15.4997 14.1667Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M15.4997 10.8333C15.4997 11.2936 15.1266 11.6667 14.6663 11.6667C14.2061 11.6667 13.833 11.2936 13.833 10.8333C13.833 10.3731 14.2061 10 14.6663 10C15.1266 10 15.4997 10.3731 15.4997 10.8333Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M11.3337 14.1667C11.3337 14.6269 10.9606 15 10.5003 15C10.0401 15 9.66699 14.6269 9.66699 14.1667C9.66699 13.7064 10.0401 13.3333 10.5003 13.3333C10.9606 13.3333 11.3337 13.7064 11.3337 14.1667Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M11.3337 10.8333C11.3337 11.2936 10.9606 11.6667 10.5003 11.6667C10.0401 11.6667 9.66699 11.2936 9.66699 10.8333C9.66699 10.3731 10.0401 10 10.5003 10C10.9606 10 11.3337 10.3731 11.3337 10.8333Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M7.16667 14.1667C7.16667 14.6269 6.79357 15 6.33333 15C5.8731 15 5.5 14.6269 5.5 14.1667C5.5 13.7064 5.8731 13.3333 6.33333 13.3333C6.79357 13.3333 7.16667 13.7064 7.16667 14.1667Z"
+                                                fill="#111111" />
+                                            <path
+                                                d="M7.16667 10.8333C7.16667 11.2936 6.79357 11.6667 6.33333 11.6667C5.8731 11.6667 5.5 11.2936 5.5 10.8333C5.5 10.3731 5.8731 10 6.33333 10C6.79357 10 7.16667 10.3731 7.16667 10.8333Z"
+                                                fill="#111111" />
+                                        </svg>
+
+                                    </span>
+                                    <span>تاریخ انجام:</span>
+                                </div>
+                                <div class="text-[#111111]"> 24 مهر 1401</div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-x-1.5">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_83_2364)">
+                                                <circle opacity="0.5" cx="10.0003" cy="10" r="8.33333" stroke="#111111"
+                                                    stroke-width="1.5" />
+                                                <path d="M10 6.66667V10L12.0833 12.0833" stroke="#111111"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_83_2364">
+                                                    <rect width="20" height="20" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+
+                                    </span>
+                                    <span>مدت زمان:</span>
+                                </div>
+                                <div class="text-[#111111]">1 ماه</div>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-x-1.5">
+                                    <span>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.3337 18.3333L1.66699 18.3333" stroke="#1C274C"
+                                                stroke-width="1.25" stroke-linecap="round" />
+                                            <path
+                                                d="M14.1663 18.3333V5C14.1663 3.42865 14.1663 2.64298 13.6782 2.15482C13.19 1.66667 12.4044 1.66667 10.833 1.66667H9.16634C7.59499 1.66667 6.80932 1.66667 6.32116 2.15482C5.83301 2.64298 5.83301 3.42865 5.83301 5V18.3333"
+                                                stroke="#1C274C" stroke-width="1.25" />
+                                            <path opacity="0.5"
+                                                d="M17.4997 18.3333V9.58333C17.4997 8.41295 17.4997 7.82776 17.2188 7.40738C17.0972 7.2254 16.9409 7.06915 16.759 6.94755C16.3386 6.66667 15.7534 6.66667 14.583 6.66667"
+                                                stroke="#1C274C" stroke-width="1.25" />
+                                            <path opacity="0.5"
+                                                d="M2.5 18.3333V9.58333C2.5 8.41295 2.5 7.82776 2.78088 7.40738C2.90248 7.2254 3.05873 7.06915 3.24072 6.94755C3.66109 6.66667 4.24628 6.66667 5.41667 6.66667"
+                                                stroke="#1C274C" stroke-width="1.25" />
+                                            <path d="M10 18.3333V15.8333" stroke="#1C274C" stroke-width="1.25"
+                                                stroke-linecap="round" />
+                                            <path opacity="0.5" d="M8.33301 4.16667H11.6663" stroke="#1C274C"
+                                                stroke-width="1.25" stroke-linecap="round" />
+                                            <path opacity="0.5" d="M8.33301 6.66667H11.6663" stroke="#1C274C"
+                                                stroke-width="1.25" stroke-linecap="round" />
+                                            <path opacity="0.5" d="M8.33301 9.16666H11.6663" stroke="#1C274C"
+                                                stroke-width="1.25" stroke-linecap="round" />
+                                            <path opacity="0.5" d="M8.33301 11.6667H11.6663" stroke="#1C274C"
+                                                stroke-width="1.25" stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    <span>شرکت:</span>
+                                </div>
+                                <div class="text-[#111111]">شرکت ملی نفت ایران</div>
+                            </div>
+                            <a href="/public/project-dtails.html" class="center mx-auto gap-x-[7px] w-[120px] h-[40px] bg-orange-mid rounded-xs">
+                                <span>
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.5"
+                                            d="M2.74498 10.6909C2.17997 9.95682 1.89746 9.5898 1.89746 8.49999C1.89746 7.41018 2.17997 7.04316 2.74497 6.30912C3.87314 4.84345 5.76518 3.18181 8.54519 3.18181C11.3252 3.18181 13.2172 4.84345 14.3454 6.30912C14.9104 7.04316 15.1929 7.41018 15.1929 8.49999C15.1929 9.5898 14.9104 9.95682 14.3454 10.6909C13.2172 12.1565 11.3252 13.8182 8.54519 13.8182C5.76518 13.8182 3.87314 12.1565 2.74498 10.6909Z"
+                                            stroke="white" stroke-width="1.32955" />
+                                        <path
+                                            d="M10.5404 8.49999C10.5404 9.60143 9.64751 10.4943 8.54608 10.4943C7.44464 10.4943 6.55176 9.60143 6.55176 8.49999C6.55176 7.39856 7.44464 6.50568 8.54608 6.50568C9.64751 6.50568 10.5404 7.39856 10.5404 8.49999Z"
+                                            stroke="white" stroke-width="1.32955" />
+                                    </svg>
+
+                                </span>
+                                <span class="text-white text-xs">مشاهده پروژه</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -560,7 +965,7 @@
         <!-- contact -->
         <div class="flex flex-col w-full md:w-auto lg:w-[589px]">
             <!-- address -->
-            <div class="w-full  sm:bg-contact-cream py-[10px] px-[30px] mb-[15px] rounded-lg">
+            <div class="w-full  sm:hover:bg-address  sm:bg-contact-cream py-[10px] px-[30px] mb-[15px] rounded-lg">
                 <div class="flex items-center justify-center sm:justify-start flex-wrap gap-x-[11px] gap-y-[13px]">
                     <span class="center w-[44px] h-[41px] bg-white">
                         <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -576,7 +981,7 @@
             </div>
             <!-- phone -->
             <div
-                class="w-full flex flex-col sm:flex-row justify-between items-center  sm:bg-contact-cream py-[10px] px-[32px] mb-[15px] rounded-lg">
+                class="w-full flex flex-col sm:flex-row justify-between items-center sm:bg-contact-cream   sm:hover:bg-address  py-[10px] px-[32px] mb-[15px] rounded-lg">
                 <div class="flex flex-col sm:flex-row items-center gap-x-[11px] gap-y-[8px] mb-[18px] sm:mb-0">
                     <span class="center w-[48px] h-[40px]">
                         <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -602,7 +1007,7 @@
             </div>
             <!-- socail -->
             <div
-                class="flex flex-col sm:flex-row justify-center sm:justify-between  items-center py-[10px] px-[30px] gap-y-5 sm:bg-contact-cream">
+                class="flex flex-col sm:flex-row justify-center sm:justify-between  items-center py-[10px] px-[30px] gap-y-5 sm:hover:bg-address sm:bg-contact-cream">
                 <div class=" text-content-one ">شبکه های اجتماعی</div>
                 <div class="flex gap-x-[11px]">
                     <!-- telegram -->

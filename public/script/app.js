@@ -58,3 +58,18 @@ hidemenu.addEventListener("click", () => {
   menu.classList.toggle("right-[700px]");
   menu.classList.remove("right-0");
 });
+
+function shareBtn(){
+  if (navigator.share) {
+    navigator
+      .share({
+        title: "عنوان",
+        text: "متن",
+        url: "http://ilyagvc.online",
+      })
+      .then(() => console.log("متن به اشتراک گذاشته شد."))
+      .catch((error) => console.error("خطا در به اشتراک گذاری متن:", error));
+  } else {
+    alert("مرورگر شما از این قابلیت پشتیبانی نمی‌کند.");
+  }
+}
