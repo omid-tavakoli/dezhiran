@@ -513,10 +513,6 @@ button:hover{
   cursor: url("../../public/image/cursor.png"), auto;
 }
 
-input:focus{
-  cursor: url("../../public/image/cursor.png"), auto;
-}
-
 img {
   background-size: cover;
   background-position: center;
@@ -794,6 +790,22 @@ img {
   top: 18px;
 }
 
+.top-10 {
+  top: 2.5rem;
+}
+
+.top-1 {
+  top: 0.25rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.top-16 {
+  top: 4rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -802,8 +814,12 @@ img {
   z-index: 20;
 }
 
-.z-30 {
-  z-index: 30;
+.z-40 {
+  z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .row-start-4 {
@@ -1884,6 +1900,11 @@ img {
   background-color: rgb(249 249 249 / var(--tw-bg-opacity));
 }
 
+.bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}
+
 .bg-orange-mid {
   --tw-bg-opacity: 1;
   background-color: rgb(227 73 53 / var(--tw-bg-opacity));
@@ -2492,6 +2513,10 @@ img {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.opacity-10 {
+  opacity: 0.1;
+}
+
 .opacity-20 {
   opacity: 0.2;
 }
@@ -2513,10 +2538,6 @@ img {
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-.outline {
-  outline-style: solid;
 }
 
 .filter {

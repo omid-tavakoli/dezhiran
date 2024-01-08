@@ -7,7 +7,8 @@ const boxName = document.querySelector(".box-name");
 const iconName = document.querySelector(".icon-name");
 const search = document.querySelector(".search")
 const poster = document.querySelector(".poster")
-
+const backDrop = document.querySelector(".back-drop")
+const iconSearch = document.querySelector(".icon-search")
 Name.addEventListener("focusin", () => {
   boxName.classList.add("border-pale-blue");
   boxName.classList.remove("border-gray-border");
@@ -76,8 +77,12 @@ function hidePoster(){
   poster.classList.add('hidden')
 }
 function showSearch(){
+  iconSearch.classList.add("hidden")
   search.classList.remove("hidden");
+  backDrop.classList.remove("hidden");
 }
 function closeSearch(){
+  iconSearch.classList.remove("hidden")
+  backDrop.classList.add("hidden");
   search.classList.add("hidden");
 }

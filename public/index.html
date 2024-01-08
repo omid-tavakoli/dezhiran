@@ -9,7 +9,8 @@
     <script src="./script/app.js" defer></script>
 </head>
 
-<body>
+<body class="relative">
+    <div class="back-drop hidden absolute inset-0 opacity-10 bg-orange-500 z-40"></div>
     <header class="h-[60px] sm:h-[80px] lg:h-[108px] center w-full   px-3 xl:px-[60px]">
         <!-- header descktop -->
         <div class="hidden h-full sm:flex  justify-between items-center w-full text-base">
@@ -89,7 +90,7 @@
             <!-- contact and login and search-->
             <div class="relative flex items-center gap-x-2 md:gap-x-3">
                 <!-- search -->
-                <div class="search hidden absolute top-4 left-10 z-30 w-[469px] py-[27px] px-[26px] rounded-xs bg-white shadow-sm">
+                <div class="search hidden absolute top-16 left-10 w-[469px] py-[27px] px-[26px] rounded-xs bg-white shadow-sm z-50">
                     <span class="absolute top-2 right-2" onclick="closeSearch()">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
@@ -112,7 +113,7 @@
                         </span>
                     </div>                  
                 </div>
-                <div class="center w-6 lg:w-16 h-12"  onclick="showSearch()">
+                <div class="icon-search center w-6 lg:w-16 h-12"  onclick="showSearch()">
                     <span class="center w-5 h-5">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_210_1596)">

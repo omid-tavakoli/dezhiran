@@ -54,9 +54,6 @@
   button:hover{
     cursor: url("../../public/image/cursor.png"), auto;
   }
-  input:focus{
-    cursor: url("../../public/image/cursor.png"), auto;
-  }
   img{
     @apply bg-no-repeat bg-cover bg-center;
   }
