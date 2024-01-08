@@ -778,32 +778,16 @@ img {
   top: 0px;
 }
 
+.top-16 {
+  top: 4rem;
+}
+
 .top-2 {
   top: 0.5rem;
 }
 
-.top-4 {
-  top: 1rem;
-}
-
 .top-\[18px\] {
   top: 18px;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.top-1 {
-  top: 0.25rem;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.top-16 {
-  top: 4rem;
 }
 
 .z-10 {
@@ -1117,10 +1101,6 @@ img {
 
 .h-\[35px\] {
   height: 35px;
-}
-
-.h-\[374px\] {
-  height: 374px;
 }
 
 .h-\[378px\] {
@@ -2570,6 +2550,11 @@ img {
 .hover\:bg-pale-blue:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(13 120 229 / var(--tw-bg-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .focus\:outline-pale-blue:focus {
