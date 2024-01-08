@@ -89,7 +89,7 @@
             <!-- contact and login and search-->
             <div class="relative flex items-center gap-x-2 md:gap-x-3">
                 <!-- search -->
-                <div class="search hidden absolute top-4 left-10 z-30 w-[469px] h-[374px] py-[27px] px-[26px] rounded-xs bg-white shadow-sm">
+                <div class="search hidden absolute top-4 left-10 z-30 w-[469px] py-[27px] px-[26px] rounded-xs bg-white shadow-sm">
                     <span class="absolute top-2 right-2" onclick="closeSearch()">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
@@ -964,104 +964,105 @@
                     </div>
                 </div>
             </section>
-            <!-- contact -->
+            <!-- Contact Management -->
             <div
-                class="mt-[65px] mb-[57px] flex flex-col items-center px-[23px] py-[29px] sm:py-[39px] gap-y-[36px] sm:gap-y-[45px] text-black bg-[#ffffff]">
+                class="contact-management mt-[65px] mb-[57px] flex flex-col items-center px-[23px] py-[29px] sm:py-[39px] gap-y-[36px] sm:gap-y-[45px] text-black">
                 <div class="flex items-center gap-x-[17px]">
                     <span class="block w-[15px] h-[15px] bg-orange-mid rounded-xs"></span>
                     <div class="text-xl sm:text-[28px] leading-9 whitespace-nowrap">ارتباط با مدیریت‌های شرکت دژ‌
                         ایرانیان</div>
                 </div>
-                <div class="flex flex-wrap justify-center gap-x-[15px] sm:gap-x-[73px] gap-y-[17px]">
-                    <div
-                        class="group center flex-col gap-y-[14px] sm:gap-y-[20px] rounded-xl w-[147px] sm:w-[210px] h-[105px] sm:h-[150px] border border-[#c5c5c5]  bg-gradient-to-r from-[$c5c5c5] hover:bg-pale-blue transition-all z-10">
-                        <span class="w-8 sm:w-[49px] h-8 sm:h-[49px]">
-                            <svg viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="24.5" cy="31.8433" r="5.8825" stroke="#1C274D" stroke-width="2.94125" />
-                                <path
-                                    d="M24.5 38.2353L20.0629 42.4892C19.4274 43.0984 19.1097 43.403 18.8406 43.5084C18.2275 43.7486 17.5474 43.5431 17.2248 43.0201C17.0833 42.7906 17.0392 42.3766 16.951 41.5487C16.9012 41.0812 16.8763 40.8475 16.8007 40.6518C16.6314 40.2135 16.2758 39.8726 15.8187 39.7103C15.6145 39.6379 15.3707 39.614 14.8831 39.5662C14.0196 39.4817 13.5878 39.4394 13.3484 39.3037C12.8029 38.9945 12.5885 38.3424 12.839 37.7546C12.949 37.4967 13.2667 37.1921 13.9021 36.5828L16.8007 33.804L18.8406 31.764"
-                                    stroke="#1C274D" stroke-width="2.94125" />
-                                <path
-                                    d="M24.5 38.2355L28.9371 42.4894C29.5726 43.0986 29.8903 43.4033 30.1594 43.5087C30.7725 43.7489 31.4526 43.5433 31.7752 43.0203C31.9167 42.7908 31.9608 42.3769 32.049 41.5489C32.0988 41.0815 32.1237 40.8478 32.1993 40.652C32.3686 40.2137 32.7242 39.8728 33.1813 39.7106C33.3855 39.6381 33.6293 39.6142 34.1169 39.5665C34.9804 39.4819 35.4122 39.4396 35.6516 39.3039C36.1971 38.9947 36.4115 38.3427 36.161 37.7549C36.051 37.4969 35.7333 37.1923 35.0979 36.5831L32.1993 33.8042L30.3825 31.9874"
-                                    stroke="#1C274D" stroke-width="2.94125" />
-                                <path opacity="0.5"
-                                    d="M34.931 35.7566C38.7986 35.7155 40.9542 35.4731 42.3854 34.042C44.1083 32.319 44.1083 29.546 44.1083 23.9999V16.1566C44.1083 10.6105 44.1083 7.83749 42.3854 6.11454C40.6624 4.3916 37.8894 4.3916 32.3433 4.3916L16.6567 4.3916C11.1106 4.3916 8.33755 4.3916 6.61461 6.11455C4.89166 7.83749 4.89166 10.6105 4.89166 16.1566L4.89166 23.9999C4.89166 29.546 4.89166 32.319 6.61461 34.042C8.12128 35.5487 10.431 35.7378 14.6958 35.7615"
-                                    stroke="#1C274D" stroke-width="2.94125" />
-                                <path opacity="0.5" d="M18.6175 12.235L30.3825 12.235" stroke="#1C274D"
-                                    stroke-width="2.94125" stroke-linecap="round" />
-                                <path opacity="0.5" d="M14.6958 19.0979H34.3042" stroke="#1C274D" stroke-width="2.94125"
-                                    stroke-linecap="round" />
-                            </svg>
-
-                        </span>
-                        <span class="group-hover:text-white text-sm sm:text-xl sm:leading-9 transition-colors">بخش
-                            گارانتی</span>
+                <div class="flex flex-col  gap-y-[36px] sm:gap-y-[45px]">
+                    <div class="flex flex-wrap justify-center gap-x-[15px] sm:gap-x-[73px] gap-y-[17px]">
+                        <div
+                            class="group center flex-col gap-y-[14px] sm:gap-y-[20px] rounded-xl w-[147px] sm:w-[210px] h-[105px] sm:h-[150px] border border-[#c5c5c5]  backdrop-blur-lg  hover:bg-pale-blue transition-all z-10">
+                            <span class="w-8 sm:w-[49px] h-8 sm:h-[49px]">
+                                <svg viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24.5" cy="31.8433" r="5.8825" stroke="#1C274D" stroke-width="2.94125" />
+                                    <path
+                                        d="M24.5 38.2353L20.0629 42.4892C19.4274 43.0984 19.1097 43.403 18.8406 43.5084C18.2275 43.7486 17.5474 43.5431 17.2248 43.0201C17.0833 42.7906 17.0392 42.3766 16.951 41.5487C16.9012 41.0812 16.8763 40.8475 16.8007 40.6518C16.6314 40.2135 16.2758 39.8726 15.8187 39.7103C15.6145 39.6379 15.3707 39.614 14.8831 39.5662C14.0196 39.4817 13.5878 39.4394 13.3484 39.3037C12.8029 38.9945 12.5885 38.3424 12.839 37.7546C12.949 37.4967 13.2667 37.1921 13.9021 36.5828L16.8007 33.804L18.8406 31.764"
+                                        stroke="#1C274D" stroke-width="2.94125" />
+                                    <path
+                                        d="M24.5 38.2355L28.9371 42.4894C29.5726 43.0986 29.8903 43.4033 30.1594 43.5087C30.7725 43.7489 31.4526 43.5433 31.7752 43.0203C31.9167 42.7908 31.9608 42.3769 32.049 41.5489C32.0988 41.0815 32.1237 40.8478 32.1993 40.652C32.3686 40.2137 32.7242 39.8728 33.1813 39.7106C33.3855 39.6381 33.6293 39.6142 34.1169 39.5665C34.9804 39.4819 35.4122 39.4396 35.6516 39.3039C36.1971 38.9947 36.4115 38.3427 36.161 37.7549C36.051 37.4969 35.7333 37.1923 35.0979 36.5831L32.1993 33.8042L30.3825 31.9874"
+                                        stroke="#1C274D" stroke-width="2.94125" />
+                                    <path opacity="0.5"
+                                        d="M34.931 35.7566C38.7986 35.7155 40.9542 35.4731 42.3854 34.042C44.1083 32.319 44.1083 29.546 44.1083 23.9999V16.1566C44.1083 10.6105 44.1083 7.83749 42.3854 6.11454C40.6624 4.3916 37.8894 4.3916 32.3433 4.3916L16.6567 4.3916C11.1106 4.3916 8.33755 4.3916 6.61461 6.11455C4.89166 7.83749 4.89166 10.6105 4.89166 16.1566L4.89166 23.9999C4.89166 29.546 4.89166 32.319 6.61461 34.042C8.12128 35.5487 10.431 35.7378 14.6958 35.7615"
+                                        stroke="#1C274D" stroke-width="2.94125" />
+                                    <path opacity="0.5" d="M18.6175 12.235L30.3825 12.235" stroke="#1C274D"
+                                        stroke-width="2.94125" stroke-linecap="round" />
+                                    <path opacity="0.5" d="M14.6958 19.0979H34.3042" stroke="#1C274D" stroke-width="2.94125"
+                                        stroke-linecap="round" />
+                                </svg>
+    
+                            </span>
+                            <span class="group-hover:text-white text-sm sm:text-xl sm:leading-9 transition-colors">بخش
+                                گارانتی</span>
+                        </div>
+                        <div
+                            class="group center flex-col gap-y-[14px] sm:gap-y-[20px] rounded-xl w-[147px] sm:w-[210px] h-[105px] sm:h-[150px] border border-[#c5c5c5] backdrop-blur-lg  hover:bg-pale-blue transition-all z-10">
+                            <span class="w-8 sm:w-[49px] h-8 sm:h-[49px]">
+                                <svg viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.1523 7.33215C22.9386 6.02584 26.0612 6.02584 28.8476 7.33215L41.9679 13.4833C44.8218 14.8212 44.8218 19.4528 41.9679 20.7908L28.8477 26.9419C26.0614 28.2482 22.9388 28.2482 20.1525 26.9419L7.03211 20.7907C4.17818 19.4528 4.17819 14.8212 7.03212 13.4832L20.1523 7.33215Z"
+                                        stroke="#1C274D" stroke-width="2.94125" />
+                                    <path opacity="0.5" d="M4.89167 17.1371V27.9217" stroke="#1C274D" stroke-width="2.94125"
+                                        stroke-linecap="round" />
+                                    <path opacity="0.5"
+                                        d="M38.2258 23.0195V33.0696C38.2258 35.0462 37.2386 36.8968 35.5094 37.8543C32.6302 39.4489 28.0217 41.6474 24.5 41.6474C20.9783 41.6474 16.3698 39.4489 13.4906 37.8543C11.7615 36.8968 10.7742 35.0462 10.7742 33.0696V23.0195"
+                                        stroke="#1C274D" stroke-width="2.94125" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="group-hover:text-white text-sm sm:text-xl sm:leading-9 transition-colors">بخش فنی
+                                مهندسی</span>
+                        </div>
+                        <div
+                            class="group center flex-col gap-y-[14px] sm:gap-y-[20px] rounded-xl w-[147px] sm:w-[210px] h-[105px] sm:h-[150px] border border-[#c5c5c5]  backdrop-blur-lg  hover:bg-pale-blue transition-all z-10">
+                            <span class="w-8 sm:w-[49px] h-8 sm:h-[49px]">
+                                <svg viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24.5" cy="12.2349" r="7.84333" stroke="#1C274C" stroke-width="2.94125" />
+                                    <path opacity="0.5"
+                                        d="M36.265 18.1175C39.5138 18.1175 42.1475 15.9228 42.1475 13.2154C42.1475 10.5081 39.5138 8.31335 36.265 8.31335"
+                                        stroke="#1C274C" stroke-width="2.94125" stroke-linecap="round" />
+                                    <path opacity="0.5"
+                                        d="M12.735 18.1175C9.48619 18.1175 6.8525 15.9228 6.8525 13.2154C6.8525 10.5081 9.48619 8.31335 12.735 8.31335"
+                                        stroke="#1C274C" stroke-width="2.94125" stroke-linecap="round" />
+                                    <ellipse cx="24.5" cy="33.8041" rx="11.765" ry="7.84333" stroke="#1C274C"
+                                        stroke-width="2.94125" />
+                                    <path opacity="0.5"
+                                        d="M40.1867 37.7258C43.6265 36.9715 46.0692 35.0612 46.0692 32.8237C46.0692 30.5863 43.6265 28.676 40.1867 27.9216"
+                                        stroke="#1C274C" stroke-width="2.94125" stroke-linecap="round" />
+                                    <path opacity="0.5"
+                                        d="M8.81334 37.7258C5.37355 36.9715 2.93084 35.0612 2.93084 32.8237C2.93084 30.5863 5.37355 28.676 8.81334 27.9216"
+                                        stroke="#1C274C" stroke-width="2.94125" stroke-linecap="round" />
+                                </svg>
+                            </span>
+                            <span class="group-hover:text-white text-sm sm:text-xl sm:leading-9 transition-colors">بخش فنی
+                                مهندسی</span>
+                        </div>
+                        <div
+                            class="group center flex-col gap-y-[14px] sm:gap-y-[20px] rounded-xl w-[147px] sm:w-[210px] h-[105px] sm:h-[150px] border border-[#c5c5c5]  backdrop-blur-lg  hover:bg-pale-blue transition-all z-10">
+                            <span class="w-8 sm:w-[49px] h-8 sm:h-[49px]">
+                                <svg viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.6885 30.4016C15.9048 31.1845 16.7148 31.6438 17.4977 31.4276C18.2806 31.2113 18.7399 30.4013 18.5236 29.6184L15.6885 30.4016ZM12.8858 14.7341L14.3034 14.3425L14.3034 14.3425L12.8858 14.7341ZM10.1932 12.0782L9.80001 13.4953L9.80001 13.4953L10.1932 12.0782ZM7.24568 9.73427C6.46304 9.51713 5.65256 9.97556 5.43541 10.7582C5.21827 11.5408 5.6767 12.3513 6.45934 12.5685L7.24568 9.73427ZM40.5566 31.3052C41.3427 31.1009 41.8143 30.298 41.61 29.5119C41.4057 28.7258 40.6029 28.2542 39.8168 28.4585L40.5566 31.3052ZM20.9661 34.9001C21.5732 37.0975 20.2406 39.416 17.88 40.0294L18.6198 42.8761C22.4965 41.8687 24.8654 37.9689 23.8012 34.1169L20.9661 34.9001ZM17.88 40.0294C15.504 40.6469 13.1198 39.2679 12.5076 37.0519L9.67252 37.8351C10.7316 41.6686 14.7585 43.8796 18.6198 42.8761L17.88 40.0294ZM12.5076 37.0519C11.9005 34.8544 13.2331 32.536 15.5937 31.9225L14.8539 29.0759C10.9772 30.0833 8.60832 33.9831 9.67252 37.8351L12.5076 37.0519ZM15.5937 31.9225C17.9697 31.3051 20.3539 32.6841 20.9661 34.9001L23.8012 34.1169C22.7421 30.2833 18.7152 28.0724 14.8539 29.0759L15.5937 31.9225ZM18.5236 29.6184L14.3034 14.3425L11.4683 15.1257L15.6885 30.4016L18.5236 29.6184ZM10.5863 10.6611L7.24568 9.73427L6.45934 12.5685L9.80001 13.4953L10.5863 10.6611ZM14.3034 14.3425C13.807 12.5459 12.3842 11.1599 10.5863 10.6611L9.80001 13.4953C10.6345 13.7269 11.256 14.3573 11.4683 15.1257L14.3034 14.3425ZM22.7536 35.9318L40.5566 31.3052L39.8168 28.4585L22.0138 33.0851L22.7536 35.9318Z"
+                                        fill="#1C274C" />
+                                    <path opacity="0.5"
+                                        d="M19.7262 17.589C18.7752 14.1466 18.2996 12.4254 19.1068 11.0694C19.914 9.71347 21.6886 9.25228 25.2378 8.32989L29.0024 7.35156C32.5516 6.42918 34.3262 5.96798 35.7243 6.75085C37.1224 7.53371 37.5979 9.2549 38.5489 12.6973L39.5576 16.3485C40.5086 19.7909 40.9841 21.5121 40.1769 22.868C39.3698 24.224 37.5952 24.6852 34.0459 25.6075L30.2814 26.5859C26.7321 27.5083 24.9575 27.9695 23.5595 27.1866C22.1614 26.4037 21.6859 24.6825 20.7349 21.2402L19.7262 17.589Z"
+                                        stroke="#1C274C" stroke-width="2.94125" />
+                                </svg>
+                            </span>
+                            <span class="group-hover:text-white text-sm sm:text-xl sm:leading-9 transition-colors">بخش
+                                بازرگانی</span>
+                        </div>
                     </div>
                     <div
-                        class="group center flex-col gap-y-[14px] sm:gap-y-[20px] rounded-xl w-[147px] sm:w-[210px] h-[105px] sm:h-[150px] border border-[#c5c5c5]  bg-gradient-to-r from-[$c5c5c5] hover:bg-pale-blue transition-all z-10">
-                        <span class="w-8 sm:w-[49px] h-8 sm:h-[49px]">
-                            <svg viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M20.1523 7.33215C22.9386 6.02584 26.0612 6.02584 28.8476 7.33215L41.9679 13.4833C44.8218 14.8212 44.8218 19.4528 41.9679 20.7908L28.8477 26.9419C26.0614 28.2482 22.9388 28.2482 20.1525 26.9419L7.03211 20.7907C4.17818 19.4528 4.17819 14.8212 7.03212 13.4832L20.1523 7.33215Z"
-                                    stroke="#1C274D" stroke-width="2.94125" />
-                                <path opacity="0.5" d="M4.89167 17.1371V27.9217" stroke="#1C274D" stroke-width="2.94125"
-                                    stroke-linecap="round" />
-                                <path opacity="0.5"
-                                    d="M38.2258 23.0195V33.0696C38.2258 35.0462 37.2386 36.8968 35.5094 37.8543C32.6302 39.4489 28.0217 41.6474 24.5 41.6474C20.9783 41.6474 16.3698 39.4489 13.4906 37.8543C11.7615 36.8968 10.7742 35.0462 10.7742 33.0696V23.0195"
-                                    stroke="#1C274D" stroke-width="2.94125" stroke-linecap="round" />
-                            </svg>
-                        </span>
-                        <span class="group-hover:text-white text-sm sm:text-xl sm:leading-9 transition-colors">بخش فنی
-                            مهندسی</span>
-                    </div>
-                    <div
-                        class="group center flex-col gap-y-[14px] sm:gap-y-[20px] rounded-xl w-[147px] sm:w-[210px] h-[105px] sm:h-[150px] border border-[#c5c5c5]  bg-gradient-to-r from-[$c5c5c5] hover:bg-pale-blue transition-all z-10">
-                        <span class="w-8 sm:w-[49px] h-8 sm:h-[49px]">
-                            <svg viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="24.5" cy="12.2349" r="7.84333" stroke="#1C274C" stroke-width="2.94125" />
-                                <path opacity="0.5"
-                                    d="M36.265 18.1175C39.5138 18.1175 42.1475 15.9228 42.1475 13.2154C42.1475 10.5081 39.5138 8.31335 36.265 8.31335"
-                                    stroke="#1C274C" stroke-width="2.94125" stroke-linecap="round" />
-                                <path opacity="0.5"
-                                    d="M12.735 18.1175C9.48619 18.1175 6.8525 15.9228 6.8525 13.2154C6.8525 10.5081 9.48619 8.31335 12.735 8.31335"
-                                    stroke="#1C274C" stroke-width="2.94125" stroke-linecap="round" />
-                                <ellipse cx="24.5" cy="33.8041" rx="11.765" ry="7.84333" stroke="#1C274C"
-                                    stroke-width="2.94125" />
-                                <path opacity="0.5"
-                                    d="M40.1867 37.7258C43.6265 36.9715 46.0692 35.0612 46.0692 32.8237C46.0692 30.5863 43.6265 28.676 40.1867 27.9216"
-                                    stroke="#1C274C" stroke-width="2.94125" stroke-linecap="round" />
-                                <path opacity="0.5"
-                                    d="M8.81334 37.7258C5.37355 36.9715 2.93084 35.0612 2.93084 32.8237C2.93084 30.5863 5.37355 28.676 8.81334 27.9216"
-                                    stroke="#1C274C" stroke-width="2.94125" stroke-linecap="round" />
-                            </svg>
-                        </span>
-                        <span class="group-hover:text-white text-sm sm:text-xl sm:leading-9 transition-colors">بخش فنی
-                            مهندسی</span>
-                    </div>
-                    <div
-                        class="group center flex-col gap-y-[14px] sm:gap-y-[20px] rounded-xl w-[147px] sm:w-[210px] h-[105px] sm:h-[150px] border border-[#c5c5c5]  bg-gradient-to-r from-[$c5c5c5] hover:bg-pale-blue transition-all z-10">
-                        <span class="w-8 sm:w-[49px] h-8 sm:h-[49px]">
-                            <svg viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M15.6885 30.4016C15.9048 31.1845 16.7148 31.6438 17.4977 31.4276C18.2806 31.2113 18.7399 30.4013 18.5236 29.6184L15.6885 30.4016ZM12.8858 14.7341L14.3034 14.3425L14.3034 14.3425L12.8858 14.7341ZM10.1932 12.0782L9.80001 13.4953L9.80001 13.4953L10.1932 12.0782ZM7.24568 9.73427C6.46304 9.51713 5.65256 9.97556 5.43541 10.7582C5.21827 11.5408 5.6767 12.3513 6.45934 12.5685L7.24568 9.73427ZM40.5566 31.3052C41.3427 31.1009 41.8143 30.298 41.61 29.5119C41.4057 28.7258 40.6029 28.2542 39.8168 28.4585L40.5566 31.3052ZM20.9661 34.9001C21.5732 37.0975 20.2406 39.416 17.88 40.0294L18.6198 42.8761C22.4965 41.8687 24.8654 37.9689 23.8012 34.1169L20.9661 34.9001ZM17.88 40.0294C15.504 40.6469 13.1198 39.2679 12.5076 37.0519L9.67252 37.8351C10.7316 41.6686 14.7585 43.8796 18.6198 42.8761L17.88 40.0294ZM12.5076 37.0519C11.9005 34.8544 13.2331 32.536 15.5937 31.9225L14.8539 29.0759C10.9772 30.0833 8.60832 33.9831 9.67252 37.8351L12.5076 37.0519ZM15.5937 31.9225C17.9697 31.3051 20.3539 32.6841 20.9661 34.9001L23.8012 34.1169C22.7421 30.2833 18.7152 28.0724 14.8539 29.0759L15.5937 31.9225ZM18.5236 29.6184L14.3034 14.3425L11.4683 15.1257L15.6885 30.4016L18.5236 29.6184ZM10.5863 10.6611L7.24568 9.73427L6.45934 12.5685L9.80001 13.4953L10.5863 10.6611ZM14.3034 14.3425C13.807 12.5459 12.3842 11.1599 10.5863 10.6611L9.80001 13.4953C10.6345 13.7269 11.256 14.3573 11.4683 15.1257L14.3034 14.3425ZM22.7536 35.9318L40.5566 31.3052L39.8168 28.4585L22.0138 33.0851L22.7536 35.9318Z"
-                                    fill="#1C274C" />
-                                <path opacity="0.5"
-                                    d="M19.7262 17.589C18.7752 14.1466 18.2996 12.4254 19.1068 11.0694C19.914 9.71347 21.6886 9.25228 25.2378 8.32989L29.0024 7.35156C32.5516 6.42918 34.3262 5.96798 35.7243 6.75085C37.1224 7.53371 37.5979 9.2549 38.5489 12.6973L39.5576 16.3485C40.5086 19.7909 40.9841 21.5121 40.1769 22.868C39.3698 24.224 37.5952 24.6852 34.0459 25.6075L30.2814 26.5859C26.7321 27.5083 24.9575 27.9695 23.5595 27.1866C22.1614 26.4037 21.6859 24.6825 20.7349 21.2402L19.7262 17.589Z"
-                                    stroke="#1C274C" stroke-width="2.94125" />
-                            </svg>
-                        </span>
-                        <span class="group-hover:text-white text-sm sm:text-xl sm:leading-9 transition-colors">بخش
-                            بازرگانی</span>
-                    </div>
-                </div>
-                <div
-                    class="flex flex-wrap sm:flex-nowrap items-center justify-center sm:justify-between gap-y-[36px] gap-x-5  w-[90%]">
-                    <span class="text-xs sm:text-xl sm:leading-9 max-w-[315px]  xl:max-w-[614px]">
+                    class="flex flex-wrap sm:flex-nowrap items-center justify-center sm:justify-between gap-y-[36px] gap-x-10">
+                    <span class="text-xs sm:text-xl sm:leading-9 lg:max-w-[614px]">
                         با ارتباط با واحد فنی می‌توانید به صورت رایگان از پیشنهادات و مشاوره ارائه شده توسط کارشناسان
                         ما، متناسب با پروژه خود بهره‌مند شوید.
                     </span>
                     <a href="#"
-                        class="whitespace-nowrap center gap-x-2 text-white bg-orange-mid rounded-xs w-[130px] h-10 sm:w-[171px] sm:h-[64px]">
+                        class="whitespace-nowrap center gap-x-2 text-white bg-orange-mid rounded-xs min-w-[130px] min-h-10 sm:w-[171px] sm:h-[64px]">
                         <span class="w-[18px] h-[18px] sm:w-[25px] sm:h-[24px]">
                             <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1075,6 +1076,8 @@
                         <span class="text-sm sm:text-base">برقرای تماس</span>
                     </a>
                 </div>
+                </div>             
+                
             </div>
             <!-- project -->
             <section class="px-[14px] md:px-[60px]">
@@ -1857,22 +1860,22 @@
                 </div>
             </section>
             <!-- a look -->
-            <div class="flex flex-col items-center py-[36px] gap-y-[31px] text-white bg-[#B14638]">
+            <div class="look flex flex-col items-center py-[36px] gap-y-[31px] text-white bg-[#B14638]">
                 <div class="text-2xl leading-9">شرکت دژ ایرانیان در یک نگاه</div>
-                <div class="flex flex-wrap justify-center gap-x-[73px] gap-y-[17px]">
-                    <div class="flex flex-col">
+                <div class="flex flex-wrap justify-center gap-x-[30px] xl:gap-x-[73px] gap-y-[17px]">
+                    <div class="flex flex-col items-center">
                         <span class="text-[33px] leading-[43px] text-center">38+</span>
                         <span class="text-2xl leading-[43px]">تعداد نمایندگی ها</span>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-center">
                         <span class="text-[33px] leading-[43px] text-center">250</span>
                         <span class="text-2xl leading-[43px]">تعداد پروژه های انجام شده</span>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-center">
                         <span class="text-[33px] leading-[43px] text-center">1185</span>
                         <span class="text-2xl leading-[43px]">تعداد مشاوره رایگان</span>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col items-center">
                         <span class="text-[33px] leading-[43px] text-center">80+</span>
                         <span class="text-2xl leading-[43px]">تعداد همکاران ما</span>
                     </div>
