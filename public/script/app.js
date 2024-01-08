@@ -12,16 +12,20 @@ const iconSearch = document.querySelector(".icon-search");
 const counters = document.querySelectorAll(".value");
 let url = window.location.pathname;
 
-const speed = 1000;
 counters.forEach((counter) => {
+  let speed = 1000;
   const animate = () => {
     const value = +counter.getAttribute("count");
     const data = +counter.innerText;
-
+    console.log(speed , data )
     const time = value / speed;
     if (data < value) {
       counter.innerText = Math.ceil(data + time);
-      setTimeout(animate, 1);
+      if(value - data <= 20){
+      setTimeout(animate, 100);
+      }else{
+        setTimeout(animate, 1);
+      }
     } else {
       counter.innerText = value;
     }
