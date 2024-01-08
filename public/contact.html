@@ -87,9 +87,32 @@
                 </div>
             </nav>
             <!-- contact and login and search-->
-            <div class="flex items-center gap-x-2 md:gap-x-3">
+            <div class="relative flex items-center gap-x-2 md:gap-x-3">
                 <!-- search -->
-                <div class="center w-6 lg:w-16 h-12 ">
+                <div class="search hidden absolute top-4 left-10 z-30 w-[469px] h-[374px] py-[27px] px-[26px] rounded-xs bg-white shadow-sm">
+                    <span class="absolute top-2 right-2" onclick="closeSearch()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                          </svg>                          
+                    </span>
+                    <div class="flex items-center justify-between gap-x-2 border border-[#D1D1D1] mt-5 pr-[11px] rounded-lg">
+                        <input class="py-[23px] w-[90%]  outline-none" type="text" placeholder="جستجو محصول مقاله و غیره.....">
+                        <span class="ml-7">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_411_96)">
+                                <path d="M16.6667 17.1667L18.3334 18.8333" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M5.62508 3.22577C6.78952 2.55218 8.14144 2.16666 9.58341 2.16666C13.9557 2.16666 17.5001 5.71107 17.5001 10.0833C17.5001 14.4556 13.9557 18 9.58341 18C5.21116 18 1.66675 14.4556 1.66675 10.0833C1.66675 8.64135 2.05227 7.28943 2.72586 6.12499" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_411_96">
+                                <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                           
+                        </span>
+                    </div>                  
+                </div>
+                <div class="center w-6 lg:w-16 h-12"  onclick="showSearch()">
                     <span class="center w-5 h-5">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_210_1596)">

@@ -88,9 +88,32 @@
                 </div>
             </nav>
             <!-- contact and login and search-->
-            <div class="flex items-center gap-x-2 md:gap-x-3">
+            <div class="relative flex items-center gap-x-2 md:gap-x-3">
                 <!-- search -->
-                <div class="center w-6 lg:w-16 h-12 ">
+                <div class="search hidden absolute top-4 left-10 z-30 w-[469px] h-[374px] py-[27px] px-[26px] rounded-xs bg-white shadow-sm">
+                    <span class="absolute top-2 right-2" onclick="closeSearch()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                          </svg>                          
+                    </span>
+                    <div class="flex items-center justify-between gap-x-2 border border-[#D1D1D1] mt-5 pr-[11px] rounded-lg">
+                        <input class="py-[23px] w-[90%]  outline-none" type="text" placeholder="جستجو محصول مقاله و غیره.....">
+                        <span class="ml-7">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_411_96)">
+                                <path d="M16.6667 17.1667L18.3334 18.8333" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M5.62508 3.22577C6.78952 2.55218 8.14144 2.16666 9.58341 2.16666C13.9557 2.16666 17.5001 5.71107 17.5001 10.0833C17.5001 14.4556 13.9557 18 9.58341 18C5.21116 18 1.66675 14.4556 1.66675 10.0833C1.66675 8.64135 2.05227 7.28943 2.72586 6.12499" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_411_96">
+                                <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                           
+                        </span>
+                    </div>                  
+                </div>
+                <div class="center w-6 lg:w-16 h-12"  onclick="showSearch()">
                     <span class="center w-5 h-5">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_210_1596)">
@@ -429,9 +452,9 @@
                     درباره شرکت دژ ایرانیان کیسان صنعت
                 </div>
                 <!-- image -->
-                <div class="relative flex justify-center w-full ">
-                    <img src="./image/group-3.png" alt="" class="rounded-xl">
-                    <div class="absolute inset-0 bg-[#4998DD] z-10 opacity-50 rounded-xl"></div>
+                <div class="relative flex justify-center w-full">
+                    <img src="./image/group-3.png" alt="" class="rounded-xs md:rounded-xl min-w-[332px] min-h-[187px]">
+                    <div class="absolute inset-0 bg-[#4998DD] z-10 opacity-50 rounded-xs md:rounded-xl"></div>
                     <div class="absolute inset-0  z-20 flex items-center justify-center gap-x-2.5 lg:gap-x-6">
                         <span class="w-[31px] h-[55px] lg:w-[72px] lg:h-[121px]">
                             <svg  viewBox="0 0 72 121" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -530,8 +553,33 @@
                         </div>
                     </div>
                 </div>
-                <div class="center h-full w-full">
-                    <img src="./image/camera-2.png" alt="" class="sm:max-w-[404px]  rounded-xl max-w-[283px] max-h-[160px] sm:max-h-[230px]">
+                <div class="relative center mx-auto sm:max-w-[404px] max-w-[283px] max-h-[160px] sm:max-h-[230px]">
+                    <div class="poster center absolute inset-0 rounded-xl  z-10" onclick="hidePoster()">
+                        <span>
+                            <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b_46_842)">
+                                <circle cx="28.9998" cy="28.7052" r="28.5" fill="white" fill-opacity="0.01"/>
+                                <circle cx="28.9998" cy="28.7052" r="28" stroke="url(#paint0_linear_46_842)"/>
+                                </g>
+                                <path d="M38.806 27.0856C40.8566 28.23 40.8566 31.1804 38.806 32.3248L25.4618 39.7723C23.4621 40.8883 20.9998 39.4427 20.9998 37.1527L20.9998 22.2577C20.9998 19.9677 23.4621 18.5221 25.4618 19.6381L38.806 27.0856Z" fill="white"/>
+                                <defs>
+                                <filter id="filter0_b_46_842" x="-26.5002" y="-26.7948" width="111" height="111" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feGaussianBlur in="BackgroundImageFix" stdDeviation="13.5"/>
+                                <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_46_842"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_46_842" result="shape"/>
+                                </filter>
+                                <linearGradient id="paint0_linear_46_842" x1="28.9998" y1="0.2052" x2="28.9998" y2="57.2052" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F7F7F7"/>
+                                <stop offset="1" stop-color="#F7F7F7" stop-opacity="0"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>                                
+                        </span>
+                    </div>                    
+                    <video controls alt="" width="404px" height="230px" class="sm:max-w-[404px] rounded-xl max-w-[283px] max-h-[160px] sm:max-h-[230px]" poster="">
+                        <source src="./video/dcdeb9f024e8f9a8e1f5d3f99d7e5ea251604895-720p.mp4">
+                    </video>
                 </div>
             </div>
             <!-- Other services -->

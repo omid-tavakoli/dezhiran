@@ -83,4 +83,13 @@
   .unactive-page-rtc {
     @apply hidden;
   }
-}
+  .avtive-page-project{
+    @apply bg-pale-blue !text-white;
+  }
+  .poster{
+    background: url("../image/camera-2.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+  }
+

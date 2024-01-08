@@ -5,6 +5,8 @@ const iconPhone = document.querySelector(".icon-phone");
 const Name = document.querySelector(".name");
 const boxName = document.querySelector(".box-name");
 const iconName = document.querySelector(".icon-name");
+const search = document.querySelector(".search")
+const poster = document.querySelector(".poster")
 
 Name.addEventListener("focusin", () => {
   boxName.classList.add("border-pale-blue");
@@ -69,4 +71,13 @@ function shareBtn(){
   } else {
     alert("مرورگر شما از این قابلیت پشتیبانی نمی‌کند.");
   }
+}
+function hidePoster(){
+  poster.classList.add('hidden')
+}
+function showSearch(){
+  search.classList.remove("hidden");
+}
+function closeSearch(){
+  search.classList.add("hidden");
 }
