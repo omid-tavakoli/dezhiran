@@ -103,5 +103,10 @@
   .avtice-menu-mobile{
     @apply bg-address;
   }
+  .projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-gap: 10px;
+  }
   }
 
