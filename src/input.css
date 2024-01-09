@@ -108,5 +108,11 @@
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     grid-gap: 10px;
   }
+  .active-contact{
+    @apply bg-pale-blue text-white
+  }
+  .box-text-contact-management{
+    @apply flex flex-wrap sm:flex-nowrap items-center justify-center sm:justify-between gap-y-[36px] gap-x-10
+  }
   }
 

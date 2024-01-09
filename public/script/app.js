@@ -12,6 +12,7 @@ const iconSearch = document.querySelector(".icon-search");
 const counters = document.querySelectorAll(".value");
 const searchMobile = document.querySelector(".search-mobile");
 const inputSearch = document.querySelector(".input-search");
+const textContactManagement = document.querySelectorAll(".box-text-contact-management");
 let url = window.location.pathname;
 let options = {
   root: null,
@@ -131,3 +132,14 @@ function showSearchMobile() {
 function closeSearchMobile() {
   searchMobile.classList.add("hidden");
 }
+function hiddenTextContact(){
+  textContactManagement.forEach((e)=>{
+    e.classList.add('hidden')
+  })
+}
+function showTextContact (e){
+  hiddenTextContact()
+  let element = document.querySelector(`.${e}`)
+  element.classList.remove('hidden')
+}
+
