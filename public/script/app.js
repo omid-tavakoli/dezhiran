@@ -10,6 +10,10 @@ const poster = document.querySelector(".poster");
 const backDrop = document.querySelector(".back-drop");
 const iconSearch = document.querySelector(".icon-search");
 const counters = document.querySelectorAll(".value");
+const searchMobile = document.querySelector(".search-mobile");
+const inputSearch = document.querySelector(".input-search");
+
+
 let url = window.location.pathname;
 
 counters.forEach((counter) => {
@@ -17,7 +21,6 @@ counters.forEach((counter) => {
   const animate = () => {
     const value = +counter.getAttribute("count");
     const data = +counter.innerText;
-    console.log(speed , data )
     const time = value / speed;
     if (data < value) {
       counter.innerText = Math.ceil(data + time);
@@ -110,4 +113,11 @@ function closeSearch() {
   iconSearch.classList.remove("hidden");
   backDrop.classList.add("hidden");
   search.classList.add("hidden");
+}
+function showSearchMobile(){
+  searchMobile.classList.remove('hidden')
+  inputSearch.focus()
+}
+function closeSearchMobile(){
+  searchMobile.classList.add("hidden");
 }

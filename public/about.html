@@ -43,7 +43,10 @@
                     <ul
                         class="flex items-center h-full text-sm lg:text-base gap-x-2.5 md:gap-x-4 xl:gap-x-[30px] text-dark-header whitespace-nowrap">
                         <li class="center flex-col h-full">
-                            <a href="./index.html">صفحه اصلی</a>
+                            <a href="./index.html" class="active-page">صفحه اصلی</a>
+                            <div class="active-page-rtc">
+                                <span class="block w-[32px] h-[5px] rounded-xs bg-orange-mid"></span>
+                            </div>
                         </li>
                         <li class="center flex-col h-full">
                             <div class="flex items-center gap-x-[2.5px]">
@@ -77,13 +80,9 @@
                         </li>
                         <li class="center flex-col h-full">
                             <a href="./contact.html">ارتباط با ما</a>
-                            
                         </li>
                         <li class="center flex-col h-full">
-                            <a href="./about.html" class="active-page">درباره ما</a>
-                            <div class="active-page-rtc">
-                                <span class="block w-[32px] h-[5px] rounded-xs bg-orange-mid"></span>
-                            </div>
+                            <a href="./about.html">درباره ما</a>
                         </li>
                     </ul>
                 </div>
@@ -176,7 +175,7 @@
             </div>
         </div>
         <!-- header mobile -->
-        <div class="flex items-center w-full justify-between sm:hidden">
+        <div class="flex items-center w-full justify-between sm:hidden z-30 z-30">
             <!-- header -->
             <div class="flex justify-between w-full">
                 <!-- logo -->
@@ -188,7 +187,7 @@
                                 fill="#E34935" />
                         </svg>
                     </span>
-                    <span>دژ ایرانیان</span>
+                    <span class="font-semibold">دژ ایرانیان</span>
                 </div>
                 <!-- icon menu -->
                 <!-- onclick -->
@@ -206,7 +205,7 @@
             <div
                 class="menu bg-menu-mobile px-[15px] py-[18px] w-full fixed top-0 bottom-0 right-[700px] left-0 overflow-y-auto min-h-screen z-20 transition-all ">
                 <!-- header menu -->
-                <div class="flex justify-between mb-[18px]">
+                <div class="flex justify-between mb-[22px]">
                     <div class="flex items-center gap-x-2">
                         <span class="md:hidden">
                             <svg width="21" height="35" viewBox="0 0 21 35" fill="none"
@@ -216,7 +215,7 @@
                                     fill="#E34935" />
                             </svg>
                         </span>
-                        <span>دژ ایرانیان</span>
+                        <span class="font-semibold">دژ ایرانیان</span>
                     </div>
                     <!-- onclick -->
                     <span onclick="hidemenu()">
@@ -229,12 +228,53 @@
                         </svg>
                     </span>
                 </div>
-                <div class="w-full flex flex-col justify-between h-[90%]">
+                <!-- search -->
+                <div class="flex items-center justify-between gap-x-2 border border-[#D1D1D1] mt-5 pr-[8.5px] rounded-lg mb-[18px]">
+                    <input onfocus="showSearchMobile()" class="py-[12px] w-[90%]  outline-none" type="text" placeholder="جستجو محصول مقاله و غیره.....">
+                    <span class="ml-5">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_411_96)">
+                            <path d="M16.6667 17.1667L18.3334 18.8333" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M5.62508 3.22577C6.78952 2.55218 8.14144 2.16666 9.58341 2.16666C13.9557 2.16666 17.5001 5.71107 17.5001 10.0833C17.5001 14.4556 13.9557 18 9.58341 18C5.21116 18 1.66675 14.4556 1.66675 10.0833C1.66675 8.64135 2.05227 7.28943 2.72586 6.12499" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_411_96">
+                            <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>                           
+                    </span>
+                </div>
+                <div class="search-mobile hidden absolute inset-0 py-[27px] px-[26px] rounded-xs bg-white shadow-sm z-50">
+                    <span class="absolute top-2 right-2" onclick="closeSearchMobile()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                          </svg>                          
+                    </span>
+                    <div class="flex items-center justify-between gap-x-2 border border-[#D1D1D1] mt-5 pr-[11px] rounded-lg">
+                        <input class="input-search py-[23px] w-[90%]  outline-none" type="text" placeholder="جستجو محصول مقاله و غیره.....">
+                        <span class="ml-7">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_411_96)">
+                                <path d="M16.6667 17.1667L18.3334 18.8333" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M5.62508 3.22577C6.78952 2.55218 8.14144 2.16666 9.58341 2.16666C13.9557 2.16666 17.5001 5.71107 17.5001 10.0833C17.5001 14.4556 13.9557 18 9.58341 18C5.21116 18 1.66675 14.4556 1.66675 10.0833C1.66675 8.64135 2.05227 7.28943 2.72586 6.12499" stroke="#1F1F1F" stroke-width="1.5" stroke-linecap="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_411_96">
+                                <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                           
+                        </span>
+                    </div>                  
+                </div>  
+                <!-- menu -->
+                <div class="w-full flex flex-col justify-between h-[83%]">
                     <!-- menu -->
                      <ul class="flex flex-col gap-y-2.5">
                         <a href="./index.html">
                             <li
-                                class="flex items-center gap-x-[6px] border  border-content-one rounded-xl px-2.5 py-2.5">
+                                class="flex items-center gap-x-[6px] border   border-content-one rounded-xl px-2.5 py-2.5">
                                 <span>
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -246,32 +286,6 @@
                                     </svg>
                                 </span>
                                 <span>صفحه اصلی</span>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li
-                                class="flex items-center justify-between bg-address border  border-content-one rounded-xl px-2.5 py-2.5">
-                                <div class="flex gap-x-[6px]">
-                                    <span>
-                                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M10.165 8.06868L9.75999 8.62424L10.165 8.06868ZM11.861 2.84732L11.3958 3.35348C11.6588 3.59527 12.0632 3.59527 12.3263 3.35348L11.861 2.84732ZM13.5571 8.06869L13.9621 8.62425V8.62425L13.5571 8.06869ZM11.861 8.86966L11.861 9.55716H11.861L11.861 8.86966ZM10.57 7.51312C9.93726 7.05191 9.2624 6.49103 8.75247 5.89993C8.22602 5.28966 7.96521 4.75048 7.96521 4.32188H6.59021C6.59021 5.25461 7.12046 6.11313 7.71134 6.79808C8.31875 7.50219 9.08753 8.13404 9.75999 8.62424L10.57 7.51312ZM7.96521 4.32188C7.96521 3.35146 8.44189 2.79796 9.01525 2.60501C9.61296 2.40386 10.5043 2.53399 11.3958 3.35348L12.3263 2.34116C11.1554 1.2649 9.75504 0.905273 8.57669 1.30182C7.37398 1.70657 6.59021 2.83822 6.59021 4.32188H7.96521ZM13.9621 8.62425C14.6346 8.13406 15.4033 7.5022 16.0107 6.79809C16.6016 6.11313 17.1319 5.25461 17.1319 4.32186H15.7569C15.7569 4.75049 15.4961 5.28968 14.9696 5.89994C14.4597 6.49105 13.7848 7.05192 13.1521 7.51313L13.9621 8.62425ZM17.1319 4.32186C17.1319 2.83822 16.3481 1.70657 15.1454 1.30182C13.967 0.905273 12.5667 1.2649 11.3958 2.34116L12.3263 3.35348C13.2178 2.53399 14.1091 2.40386 14.7068 2.60501C15.2802 2.79796 15.7569 3.35145 15.7569 4.32186H17.1319ZM9.75999 8.62424C10.4522 9.12881 11.001 9.55716 11.861 9.55716L11.861 8.18216C11.5265 8.18216 11.3428 8.07652 10.57 7.51312L9.75999 8.62424ZM13.1521 7.51313C12.3793 8.07652 12.1956 8.18216 11.861 8.18216L11.861 9.55716C12.7211 9.55716 13.2699 9.12882 13.9621 8.62425L13.1521 7.51313Z"
-                                                fill="#E34935" />
-                                            <path opacity="0.5"
-                                                d="M4.52771 19.606H6.59932C7.52594 19.606 8.46253 19.7026 9.36434 19.8883C10.9596 20.217 12.6392 20.2568 14.2507 19.9959C15.0454 19.8673 15.8266 19.6706 16.5337 19.3293C17.1721 19.0212 17.9541 18.5869 18.4793 18.1004C19.0038 17.6146 19.55 16.8196 19.9377 16.1982C20.2702 15.6653 20.1094 15.0115 19.5835 14.6145C18.9994 14.1734 18.1326 14.1735 17.5486 14.6147L15.892 15.8661C15.25 16.3511 14.5487 16.7975 13.7132 16.9308C13.6128 16.9468 13.5075 16.9614 13.3977 16.9741M13.3977 16.9741C13.3646 16.9779 13.3312 16.9816 13.2973 16.9851M13.3977 16.9741C13.5314 16.9455 13.6641 16.863 13.7886 16.7544C14.3782 16.2398 14.4155 15.3725 13.9039 14.7979C13.7852 14.6645 13.6463 14.5534 13.4919 14.4612C10.9276 12.9318 6.93801 14.0967 4.52771 15.806M13.3977 16.9741C13.3643 16.9813 13.3307 16.9851 13.2973 16.9851M13.2973 16.9851C12.8175 17.0343 12.2563 17.0471 11.6335 16.9882"
-                                                stroke="#E34935" stroke-width="1.375" stroke-linecap="round" />
-                                        </svg>
-                                    </span>
-                                    <span>خدمات</span>
-                                </div>
-                                <div>
-                                    <svg width="12" height="6" viewBox="0 0 12 6" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.8611 4.94443L5.99997 1.05554L1.13886 4.94443" stroke="#243757"
-                                            stroke-width="1.45833" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </div>
                             </li>
                         </a>
                         <a href="#">
@@ -306,7 +320,7 @@
                         </a>
                         <a href="./project.html">
                             <li
-                                class="flex items-center gap-x-[6px] border  border-content-one rounded-xl px-2.5 py-2.5">
+                                class="flex items-center gap-x-[6px] border   border-content-one rounded-xl px-2.5 py-2.5">
                                 <span>
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -346,7 +360,7 @@
                         </a>
                         <a href="./about.html">
                             <li
-                                class="flex items-center gap-x-[6px] border  border-content-one rounded-xl px-2.5 py-2.5">
+                                class="flex items-center gap-x-[6px] border avtice-menu-mobile border-content-one rounded-xl px-2.5 py-2.5">
                                 <span>
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -360,24 +374,33 @@
                         </a>
                         <a href="./contact.html">
                             <li
-                                class="flex items-center gap-x-[6px] border  border-content-one rounded-xl px-2.5 py-2.5">
-                                <span>
-                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                class="flex items-center justify-between   border  border-content-one rounded-xl px-2.5 py-2.5">
+                                <div class="flex gap-x-[6px]">
+                                    <span>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.8334 1.83334C12.8334 1.83334 14.85 2.01667 17.4167 4.58334C19.9834 7.15 20.1667 9.16667 20.1667 9.16667"
+                                                stroke="#E34935" stroke-width="1.375" stroke-linecap="round" />
+                                            <path
+                                                d="M13.0231 5.07434C13.0231 5.07434 13.9305 5.33361 15.2917 6.69479C16.6529 8.05597 16.9122 8.96343 16.9122 8.96343"
+                                                stroke="#E34935" stroke-width="1.375" stroke-linecap="round" />
+                                            <path opacity="0.5"
+                                                d="M9.20108 4.87315L9.79601 5.93917C10.3329 6.9012 10.1174 8.16321 9.27178 9.00881C9.27178 9.00882 9.27178 9.00881 9.27177 9.00882C9.27167 9.00892 8.24618 10.0346 10.1058 11.8942C11.9647 13.7532 12.9904 12.7289 12.9911 12.7282C12.9912 12.7282 12.9912 12.7282 12.9912 12.7281C13.8368 11.8826 15.0988 11.6671 16.0608 12.2039L17.1268 12.7989C18.5795 13.6096 18.751 15.6468 17.4742 16.9237C16.7069 17.6909 15.767 18.2879 14.728 18.3273C12.9788 18.3936 10.0084 17.951 7.02869 14.9713C4.04899 11.9916 3.60632 9.02112 3.67263 7.27199C3.71202 6.23296 4.30903 5.29305 5.07628 4.52579C6.35315 3.24892 8.39037 3.42048 9.20108 4.87315Z"
+                                                stroke="#E34935" stroke-width="1.375" stroke-linecap="round" />
+                                        </svg>
+                                    </span>
+                                    <span>ارتباط با ما</span>
+                                </div>
+                                <div>
+                                    <svg width="12" height="6" viewBox="0 0 12 6" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M12.8334 1.83334C12.8334 1.83334 14.85 2.01667 17.4167 4.58334C19.9834 7.15 20.1667 9.16667 20.1667 9.16667"
-                                            stroke="#E34935" stroke-width="1.375" stroke-linecap="round" />
-                                        <path
-                                            d="M13.0231 5.07434C13.0231 5.07434 13.9305 5.33361 15.2917 6.69479C16.6529 8.05597 16.9122 8.96343 16.9122 8.96343"
-                                            stroke="#E34935" stroke-width="1.375" stroke-linecap="round" />
-                                        <path opacity="0.5"
-                                            d="M9.20108 4.87315L9.79601 5.93917C10.3329 6.9012 10.1174 8.16321 9.27178 9.00881C9.27178 9.00882 9.27178 9.00881 9.27177 9.00882C9.27167 9.00892 8.24618 10.0346 10.1058 11.8942C11.9647 13.7532 12.9904 12.7289 12.9911 12.7282C12.9912 12.7282 12.9912 12.7282 12.9912 12.7281C13.8368 11.8826 15.0988 11.6671 16.0608 12.2039L17.1268 12.7989C18.5795 13.6096 18.751 15.6468 17.4742 16.9237C16.7069 17.6909 15.767 18.2879 14.728 18.3273C12.9788 18.3936 10.0084 17.951 7.02869 14.9713C4.04899 11.9916 3.60632 9.02112 3.67263 7.27199C3.71202 6.23296 4.30903 5.29305 5.07628 4.52579C6.35315 3.24892 8.39037 3.42048 9.20108 4.87315Z"
-                                            stroke="#E34935" stroke-width="1.375" stroke-linecap="round" />
+                                        <path d="M10.8611 4.94443L5.99997 1.05554L1.13886 4.94443" stroke="#243757"
+                                            stroke-width="1.45833" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-                                </span>
-                                <span>ارتباط با ما</span>
+                                </div>
                             </li>
-                        </a>
+                        </a>                      
                     </ul>
                     <!-- login and contact us -->
                     <div>
