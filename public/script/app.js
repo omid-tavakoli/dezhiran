@@ -12,30 +12,40 @@ const iconSearch = document.querySelector(".icon-search");
 const counters = document.querySelectorAll(".value");
 const searchMobile = document.querySelector(".search-mobile");
 const inputSearch = document.querySelector(".input-search");
-
-
 let url = window.location.pathname;
-
-counters.forEach((counter) => {
-  let speed = 1000;
-  const animate = () => {
-    const value = +counter.getAttribute("count");
-    const data = +counter.innerText;
-    const time = value / speed;
-    if (data < value) {
-      counter.innerText = Math.ceil(data + time);
-      if(value - data <= 20){
-      setTimeout(animate, 100);
-      }else{
-        setTimeout(animate, 1);
-      }
-    } else {
-      counter.innerText = value;
+let options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.5,
+};
+let observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const counter = entry.target;
+      const speed = 1000;
+      const animate = () => {
+        const value = +counter.getAttribute("count");
+        const data = +counter.innerText;
+        const time = value / speed;
+        if (data < value) {
+          counter.innerText = Math.ceil(data + time);
+          if (value - data <= 20) {
+            setTimeout(animate, 100);
+          } else {
+            setTimeout(animate, 1);
+          }
+        } else {
+          counter.innerText = value;
+        }
+      };
+      animate();
+      observer.unobserve(entry.target);
     }
-  };
-  animate();
+  });
+}, options);
+counters.forEach((counter) => {
+  observer.observe(counter);
 });
-
 if (url.includes("contact")) {
   Name.addEventListener("focusin", () => {
     boxName.classList.add("border-pale-blue");
@@ -114,10 +124,10 @@ function closeSearch() {
   backDrop.classList.add("hidden");
   search.classList.add("hidden");
 }
-function showSearchMobile(){
-  searchMobile.classList.remove('hidden')
-  inputSearch.focus()
+function showSearchMobile() {
+  searchMobile.classList.remove("hidden");
+  inputSearch.focus();
 }
-function closeSearchMobile(){
+function closeSearchMobile() {
   searchMobile.classList.add("hidden");
 }
