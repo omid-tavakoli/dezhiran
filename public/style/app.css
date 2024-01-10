@@ -768,6 +768,10 @@ img {
   right: -0.5rem;
 }
 
+.-top-10 {
+  top: -2.5rem;
+}
+
 .-top-2 {
   top: -0.5rem;
 }
@@ -1213,6 +1217,18 @@ img {
   height: 100%;
 }
 
+.h-\[184px\] {
+  height: 184px;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[123px\] {
+  height: 123px;
+}
+
 .max-h-\[115px\] {
   max-height: 115px;
 }
@@ -1267,6 +1283,14 @@ img {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[184px\] {
+  min-height: 184px;
+}
+
+.min-h-\[123px\] {
+  min-height: 123px;
 }
 
 .w-5 {
@@ -1421,6 +1445,18 @@ img {
   width: 100%;
 }
 
+.w-\[253px\] {
+  width: 253px;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[182px\] {
+  width: 182px;
+}
+
 .min-w-\[130px\] {
   min-width: 130px;
 }
@@ -1431,6 +1467,14 @@ img {
 
 .min-w-\[332px\] {
   min-width: 332px;
+}
+
+.min-w-\[253px\] {
+  min-width: 253px;
+}
+
+.min-w-\[182px\] {
+  min-width: 182px;
 }
 
 .max-w-\[113px\] {
@@ -1902,6 +1946,11 @@ img {
   background-color: rgb(245 246 247 / var(--tw-bg-opacity));
 }
 
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
 .bg-line-time {
   --tw-bg-opacity: 1;
   background-color: rgb(178 53 37 / var(--tw-bg-opacity));
@@ -1945,6 +1994,10 @@ img {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-1 {
+  padding: 0.25rem;
 }
 
 .p-\[18\.5px\] {
@@ -2545,8 +2598,16 @@ img {
   opacity: 0.3;
 }
 
+.opacity-40 {
+  opacity: 0.4;
+}
+
 .opacity-50 {
   opacity: 0.5;
+}
+
+.bg-blend-color-dodge {
+  background-blend-mode: color-dodge;
 }
 
 .shadow-sm {
@@ -3208,6 +3269,10 @@ img {
     height: 86px;
   }
 
+  .md\:min-h-\[184px\] {
+    min-height: 184px;
+  }
+
   .md\:w-\[198px\] {
     width: 198px;
   }
@@ -3230,6 +3295,10 @@ img {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:min-w-\[253px\] {
+    min-width: 253px;
   }
 
   .md\:grid-cols-2 {
@@ -3551,10 +3620,6 @@ img {
     flex-wrap: nowrap;
   }
 
-  .lg\:items-start {
-    align-items: flex-start;
-  }
-
   .lg\:items-center {
     align-items: center;
   }
@@ -3575,6 +3640,10 @@ img {
   .lg\:gap-x-\[13px\] {
     -moz-column-gap: 13px;
          column-gap: 13px;
+  }
+
+  .lg\:p-2 {
+    padding: 0.5rem;
   }
 
   .lg\:px-\[28px\] {

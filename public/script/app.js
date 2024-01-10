@@ -14,6 +14,14 @@ const searchMobile = document.querySelector(".search-mobile");
 const inputSearch = document.querySelector(".input-search");
 const textContactManagement = document.querySelectorAll(".box-text-contact-management");
 const activeContactManagement = document.querySelectorAll(".box-contact");
+const boxImage = document.querySelector(".box-image");
+const backDropImage = document.querySelector(".back-drop-image");
+const imagePopUp = document.querySelector(".imagePopUp");
+const rigthClick = document.querySelector(".rigthPic");
+const leftClick = document.querySelector(".leftPic");
+
+let numImage;
+let srcImage;
 
 let url = window.location.pathname;
 let options = {
@@ -149,4 +157,45 @@ function showTextContact (e,a){
   active.classList.add('active-contact')
   element.classList.remove('hidden')
 }
-
+function closeImage(){
+  boxImage.classList.add('hidden')
+  backDropImage.classList.add('hidden')
+}
+function showImage(e){
+  srcImage = e;
+  boxImage.classList.remove('hidden')
+  boxImage.classList.add('flex')
+  backDropImage.classList.remove('hidden')
+  imagePopUp.src=`${e}`
+}
+function rigthPic(){
+  leftClick.classList.remove('hidden')
+  var rightImage = srcImage.replace(/\d+(?=.png)/, function(match) {
+    if (match == 1) {
+      rigthClick.classList.add('hidden')
+     return parseInt(match)
+    }
+    return parseInt(match) - 1;
+  });
+  srcImage = rightImage
+  imagePopUp.src=`${rightImage}`
+}
+function leftPic(){
+  rigthClick.classList.remove('hidden')
+  var currentNumber = parseInt(srcImage.match(/\d+(?=.png)/)[0]);
+  var nextNumber = currentNumber + 1;
+  var nextImage = srcImage.replace(/\d+(?=.png)/, nextNumber);
+  var imageExists = checkImageExists(nextImage);
+  if(imageExists){
+    srcImage = nextImage;
+    imagePopUp.src = nextImage;
+  } else {
+    leftClick.classList.add('hidden')
+  }
+}
+function checkImageExists(imageUrl){
+  var http = new XMLHttpRequest();
+  http.open('HEAD', imageUrl, false);
+  http.send();
+  return http.status != 404;
+}
