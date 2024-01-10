@@ -44,14 +44,25 @@
                     <ul
                         class="flex items-center h-full text-sm lg:text-base gap-x-2.5 md:gap-x-4 xl:gap-x-[30px] text-dark-header whitespace-nowrap">
                         <li class="center flex-col h-full">
-                            <a href="./index.html" class="active-page">صفحه اصلی</a>
-                            <div class="active-page-rtc">
-                                <span class="block w-[32px] h-[5px] rounded-xs bg-orange-mid"></span>
-                            </div>
+                            <a href="./index.html">صفحه اصلی</a>
                         </li>
-                        <li class="center flex-col h-full">
+                        <li class="relative center flex-col h-full group">
+                            <a href="./faq.html" class="absolute hidden group-hover:flex top-[110px] bg-white items-center gap-x-[6px] rounded-xl pl-10 pr-2.5 py-2.5">
+                                <span>
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle opacity="0.5" cx="11" cy="11" r="9.16667" stroke="#E34935"
+                                                stroke-width="1.375" />
+                                            <path
+                                                d="M9.28125 8.13542C9.28125 7.18618 10.0508 6.41667 11 6.41667C11.9492 6.41667 12.7188 7.18618 12.7188 8.13542C12.7188 8.76558 12.3796 9.31653 11.8739 9.61573C11.4382 9.87351 11 10.2646 11 10.7708V11.9167"
+                                                stroke="#E34935" stroke-width="1.375" stroke-linecap="round" />
+                                            <circle cx="11" cy="14.6667" r="0.916667" fill="#E34935" />
+                                        </svg>
+                                </span>
+                                <span>سوالات متداول</span>
+                            </a>
                             <div class="flex items-center gap-x-[2.5px]">
-                                <a href="#">خدمات ما</a>
+                                <a href="./contact.html">ارتباط با ما</a>
                                 <span class="center w-5 h-5">
                                     <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -59,9 +70,6 @@
                                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </span>
-                            </div>
-                            <div class="unactive-page-rtc">
-                                <span class="block w-[32px] h-[5px] rounded-xs bg-orange-mid"></span>
                             </div>
                         </li>
                         <li class="center flex-col h-full ">
@@ -78,9 +86,6 @@
                         </li>
                         <li class="center flex-col h-full">
                             <a href="./project.html">پروژه ها</a>
-                        </li>
-                        <li class="center flex-col h-full">
-                            <a href="./contact.html">ارتباط با ما</a>
                         </li>
                         <li class="center flex-col h-full">
                             <a href="./about.html">درباره ما</a>
@@ -405,7 +410,7 @@
                     </ul>
                     <!-- login and contact us -->
                     <div>
-                        <div class="flex justify-between items-center mb-9">
+                        <div class="flex justify-between items-center mb-3">
                             <div class="flex gap-x-2.5 items-center text-xs text-pale-blue">
                                 <span>
                                     <svg width="24" height="25" viewBox="0 0 24 25" fill="none"

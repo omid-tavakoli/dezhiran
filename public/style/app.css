@@ -828,6 +828,26 @@ img {
   top: 18px;
 }
 
+.top-\[85px\] {
+  top: 85px;
+}
+
+.top-\[95px\] {
+  top: 95px;
+}
+
+.top-\[105px\] {
+  top: 105px;
+}
+
+.top-\[115px\] {
+  top: 115px;
+}
+
+.top-\[110px\] {
+  top: 110px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -879,10 +899,6 @@ img {
 
 .mb-6 {
   margin-bottom: 1.5rem;
-}
-
-.mb-9 {
-  margin-bottom: 2.25rem;
 }
 
 .mb-\[11px\] {
@@ -1217,18 +1233,6 @@ img {
   height: 100%;
 }
 
-.h-\[184px\] {
-  height: 184px;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[123px\] {
-  height: 123px;
-}
-
 .max-h-\[115px\] {
   max-height: 115px;
 }
@@ -1273,6 +1277,10 @@ img {
   min-height: 2.5rem;
 }
 
+.min-h-\[123px\] {
+  min-height: 123px;
+}
+
 .min-h-\[187px\] {
   min-height: 187px;
 }
@@ -1283,14 +1291,6 @@ img {
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-\[184px\] {
-  min-height: 184px;
-}
-
-.min-h-\[123px\] {
-  min-height: 123px;
 }
 
 .w-5 {
@@ -1445,20 +1445,12 @@ img {
   width: 100%;
 }
 
-.w-\[253px\] {
-  width: 253px;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[182px\] {
-  width: 182px;
-}
-
 .min-w-\[130px\] {
   min-width: 130px;
+}
+
+.min-w-\[182px\] {
+  min-width: 182px;
 }
 
 .min-w-\[308px\] {
@@ -1467,14 +1459,6 @@ img {
 
 .min-w-\[332px\] {
   min-width: 332px;
-}
-
-.min-w-\[253px\] {
-  min-width: 253px;
-}
-
-.min-w-\[182px\] {
-  min-width: 182px;
 }
 
 .max-w-\[113px\] {
@@ -1848,6 +1832,10 @@ img {
   border-right-width: 4px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-\[\#2B7FFF\] {
   --tw-border-opacity: 1;
   border-color: rgb(43 127 255 / var(--tw-border-opacity));
@@ -1895,6 +1883,11 @@ img {
 
 .border-b-\[\$c7c7c7\] {
   border-bottom-color: $c7c7c7;
+}
+
+.border-b-orange-mid {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(227 73 53 / var(--tw-border-opacity));
 }
 
 .bg-\[\#1877D7\] {
@@ -2290,6 +2283,10 @@ img {
   padding-bottom: 61px;
 }
 
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
 .pl-\[19px\] {
   padding-left: 19px;
 }
@@ -2606,10 +2603,6 @@ img {
   opacity: 0.5;
 }
 
-.bg-blend-color-dodge {
-  background-blend-mode: color-dodge;
-}
-
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
@@ -2660,6 +2653,10 @@ img {
 
 .focus\:outline-pale-blue:focus {
   outline-color: #0D78E5;
+}
+
+.group:hover .group-hover\:flex {
+  display: flex;
 }
 
 @media (min-width: 640px) {
