@@ -710,7 +710,6 @@ img {
 .projects{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-  grid-gap: 10px;
 }
 
 .active-contact {
@@ -3552,12 +3551,20 @@ img {
     flex-wrap: nowrap;
   }
 
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+
   .lg\:items-center {
     align-items: center;
   }
 
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:justify-items-start {
+    justify-items: start;
   }
 
   .lg\:gap-x-6 {

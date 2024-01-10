@@ -106,7 +106,6 @@
   .projects{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-    grid-gap: 10px;
   }
   .active-contact{
     @apply bg-pale-blue text-white

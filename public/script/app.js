@@ -13,6 +13,8 @@ const counters = document.querySelectorAll(".value");
 const searchMobile = document.querySelector(".search-mobile");
 const inputSearch = document.querySelector(".input-search");
 const textContactManagement = document.querySelectorAll(".box-text-contact-management");
+const activeContactManagement = document.querySelectorAll(".box-contact");
+
 let url = window.location.pathname;
 let options = {
   root: null,
@@ -136,10 +138,15 @@ function hiddenTextContact(){
   textContactManagement.forEach((e)=>{
     e.classList.add('hidden')
   })
+  activeContactManagement.forEach((e)=>{
+    e.classList.remove('active-contact')
+  })
 }
-function showTextContact (e){
+function showTextContact (e,a){
   hiddenTextContact()
   let element = document.querySelector(`.${e}`)
+  let active = document.querySelector(`.${a}`)
+  active.classList.add('active-contact')
   element.classList.remove('hidden')
 }
 
