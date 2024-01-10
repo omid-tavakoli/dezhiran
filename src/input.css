@@ -65,7 +65,7 @@
   .shadow-box {
     box-shadow: 0px 8.434504508972168px 63.258785247802734px 0px #00000008;
   }
-  .avtice {
+  .active {
     @apply sm:text-pale-blue text-content-one border-b-4 border-pale-blue pb-[7px] font-PeydaBold;
   }
   .active-answer {
@@ -80,7 +80,7 @@
   .unactive-page-rtc {
     @apply hidden;
   }
-  .avtive-page-project{
+  .active-page-project{
     @apply bg-pale-blue !text-white;
   }
   .poster{
@@ -100,7 +100,7 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-  .avtice-menu-mobile{
+  .active-menu-mobile{
     @apply bg-address;
   }
   .projects{
