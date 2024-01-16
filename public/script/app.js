@@ -6,7 +6,6 @@ const Name = document.querySelector(".name");
 const boxName = document.querySelector(".box-name");
 const iconName = document.querySelector(".icon-name");
 const search = document.querySelector(".search");
-const poster = document.querySelector(".poster");
 const backDrop = document.querySelector(".back-drop");
 const iconSearch = document.querySelector(".icon-search");
 const counters = document.querySelectorAll(".value");
@@ -121,9 +120,6 @@ function shareBtn() {
   } else {
     alert("مرورگر شما از این قابلیت پشتیبانی نمی‌کند.");
   }
-}
-function hidePoster() {
-  poster.classList.add("hidden");
 }
 function showSearch() {
   iconSearch.classList.add("hidden");
