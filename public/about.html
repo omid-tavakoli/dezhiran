@@ -48,20 +48,22 @@
                             <a href="./index.html" >صفحه اصلی</a>                        
                         </li>
                         <li class="relative center flex-col h-full group">
-                            <a href="./faq.html"  class="hidden absolute group-hover:flex top-[105%]  right-0  items-center gap-x-[6px] rounded-xl pl-10 pr-2.5 py-2.5 transition-all bg-white">
-                                <span>
-                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <circle opacity="0.5" cx="11" cy="11" r="9.16667" stroke="#E34935"
-                                                stroke-width="1.375" />
-                                            <path
-                                                d="M9.28125 8.13542C9.28125 7.18618 10.0508 6.41667 11 6.41667C11.9492 6.41667 12.7188 7.18618 12.7188 8.13542C12.7188 8.76558 12.3796 9.31653 11.8739 9.61573C11.4382 9.87351 11 10.2646 11 10.7708V11.9167"
-                                                stroke="#E34935" stroke-width="1.375" stroke-linecap="round" />
-                                            <circle cx="11" cy="14.6667" r="0.916667" fill="#E34935" />
-                                        </svg>
-                                </span>
-                                <span>سوالات متداول</span>
-                            </a>
+                            <div class="hidden absolute group-hover:flex top-full  right-0  items-center pt-2">
+                                <a href="./faq.html"  class="flex gap-x-[6px] rounded-xl pl-10 pr-2.5 py-2.5 transition-all bg-white">
+                                    <span>
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle opacity="0.5" cx="11" cy="11" r="9.16667" stroke="#E34935"
+                                                    stroke-width="1.375" />
+                                                <path
+                                                    d="M9.28125 8.13542C9.28125 7.18618 10.0508 6.41667 11 6.41667C11.9492 6.41667 12.7188 7.18618 12.7188 8.13542C12.7188 8.76558 12.3796 9.31653 11.8739 9.61573C11.4382 9.87351 11 10.2646 11 10.7708V11.9167"
+                                                    stroke="#E34935" stroke-width="1.375" stroke-linecap="round" />
+                                                <circle cx="11" cy="14.6667" r="0.916667" fill="#E34935" />
+                                            </svg>
+                                    </span>
+                                    <span>سوالات متداول</span>
+                                </a>
+                            </div>                         
                             <div class="flex items-center gap-x-[2.5px ]">
                                 <a href="./contact.html" >ارتباط با ما</a>
                                 <span class="center w-5 h-5">
@@ -480,7 +482,7 @@
                 </div>
             </div>
             <!-- about -->
-            <div class="flex flex-col items-center gap-y-[15px] md:gap-y-[26px] mb-[15px] md:mb-[62px] mt-[11px] md:mt-[32px] max-w-[686px]">
+            <div class="flex flex-col items-center gap-y-[15px] md:gap-y-[26px] mb-[15px] md:mb-[62px] mt-[11px] md:mt-[32px] ">
                 <!-- title -->
                 <div class="text-black text-xl md:text-[28px] leading-9">
                     درباره شرکت دژ ایرانیان کیسان صنعت
@@ -511,9 +513,9 @@
                 </div>
             </div>
             <!-- video -->
-            <div class="bg-orange-primery flex lg:justify-between flex-wrap gap-y-[21px] gap-x-2 lg:flex-nowrap rounded-xl px-3 md:px-[30px] xl:px-[51px] 
-            py-[14px] md:pt-[45px] md:pb-[51px] mb-[23px] md:mb-[62px]">
-                <div class="flex flex-col gap-y-3 md:gap-y-2.5">
+            <div class="bg-orange-primery flex justify-center lg:justify-between flex-wrap gap-y-[21px] gap-x-2 lg:flex-nowrap rounded-xl px-3 md:px-[30px] xl:px-[51px] 
+            py-[14px] md:pt-[45px] md:pb-[51px] mb-[23px] md:mb-[62px] ">
+                <div class="flex flex-col gap-y-3 md:gap-y-2.5 max-w-[686px]">
                     <div class="text-center md:text-right text-xl md:text-2xl leading-[50px] text-title-video">ویدیو معرفی دژ ایرانیان</div>
                     <div class="text-center md:text-right text-content-video mb-[13px] md:mb-0">
                         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
@@ -587,7 +589,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="center mx-auto sm:max-w-[404px] max-w-[283px] max-h-[160px] sm:max-h-[230px]">                   
+                <div class="center md: justify-end sm:max-w-[404px] max-w-[283px] max-h-[160px] sm:max-h-[230px]">                   
                     <video controls  data-setup='{}' alt="" width="404px" height="230px" class="video-js sm:max-w-[404px] rounded-xl max-w-[283px] max-h-[160px] sm:max-h-[230px]" >
                         <source src="./video/f58c5ce380664cc1aec03c40e81a5cf653021090-1080p.mp4" class="rounded-xl">
                     </video>
