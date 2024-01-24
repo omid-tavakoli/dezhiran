@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/app.css">
+    <link rel="stylesheet" href="./style/app.css">   
     <title>دژایرانیان</title>
+    <link href="./videojs/video-js.css" rel="stylesheet">
+    <script src="./videojs/videojs.js" defer></script>
     <script src="./script/app.js" defer></script>
 </head>
 
@@ -624,7 +626,7 @@
             <!-- pic project -->
             <div class="relative">
                 <div class=" flex flex-col gap-y-[25px] md:gap-y-3 mb-[23px] md:mb-[28px]">
-                    <div class="flex gap-x-2.5">
+                    <div class="flex items-center gap-x-2.5">
                         <span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -673,7 +675,7 @@
             </div>        
             <!-- video project -->
             <div class="flex flex-col gap-y-[25px] md:gap-y-3  mb-[40px] md:mb-[28px]">
-                <div class="flex gap-x-2.5">
+                <div class="flex items-center gap-x-2.5">
                     <span>
                         <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -686,10 +688,11 @@
                     <span class="text-xl">ویدیو پروژه</span>
                 </div>
                 <div class="flex gap-x-2.5 md:gap-x-[14px] overflow-auto">
-                    <a class="relative">
-                        <img src="./image/cctv.png" alt="" class="max-w-[253px] max-h-[184px] rounded-xl">
-                        <div class="absolute inset-0 bg-[#D9D9D9] z-10 opacity-20 rounded-xl"></div>
-                    </a>
+                    <div class="center md: justify-end sm:max-w-[404px] max-w-[253px] max-h-[160px] sm:max-h-[230px]">                   
+                        <video controls  data-setup='{}' alt="" width="404px" height="230px" class="video-js max-w-[253px] max-h-[160px] rounded-xl" >
+                            <source src="./video/f58c5ce380664cc1aec03c40e81a5cf653021090-1080p.mp4" type="video/mp4" >
+                        </video>
+                    </div>
                 </div>
             </div>
             <!-- comments -->
@@ -697,7 +700,7 @@
                     <!-- header comment -->
                     <div class="flex justify-between items-center  mb-[18px] md:mb-[28px]">
                         <div class="flex items-center gap-x-[9px]">
-                            <span class="w-[25px] h-[25px] sm:w-[30px] sm:h-[30px]>
+                            <span class="w-[25px] h-[25px] sm:w-[30px] sm:h-[30px]">
                                 <svg  viewBox="0 0 31 30" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -711,7 +714,6 @@
                                         stroke="#0D78E5" stroke-width="2.5" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>
-    
                             </span>
                             <span class="text-[17px] leading-5 sm:text-[23px] sm:leading-7 font-PeydaSemiBold">
                                 نظرات کاربران
